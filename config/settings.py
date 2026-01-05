@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'users',
     'movies',
     'reviews',
-    'recomendations',
+    'recommendations',
 ]
 
 MIDDLEWARE = [
@@ -90,6 +90,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+AUTH_USER_MODEL = 'users.CustomUser'
 
 
 # Password validation

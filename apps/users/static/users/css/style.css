@@ -1,0 +1,12 @@
+ .imdb-logo-center {
+    background-color: #f9b404; /* Il giallo IMDb */
+    color: #000;
+    font-weight: 900;
+    padding: 2px 8px;
+    border-radius: 10px;
+    line-height: 1;
+}
+
+.form-text {
+    color: rgb(155, 155, 155);
+}
