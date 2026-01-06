@@ -13,6 +13,35 @@
     {% block extra_css %}{% endblock %}
 </head>
 <body>
+   {% if user.is_authenticated and request.GET.login == "ok" %}
+
+    <div class="modal fade text-black" id="info" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="welcomeModalLabel">Welcome {{ user.username }}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Congratulations! You have successfully logged in.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var myModal = new bootstrap.Modal(document.getElementById('info'));
+        myModal.show();
+      });
+    </script>
+    {% endif %}
+
+
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-imdb-black py-2">
         <div class="container-fluid px-4">
@@ -21,7 +50,7 @@
                 <a class="navbar-brand me-3" href="{% url 'home' %}">
                     <span class="imdb-logo">PloTwist</span>
                 </a>
-                <a href="" class="btn text-white fw-bold" type="button" aria-expanded="false">
+                <a href="{% url 'home' %}" class="btn text-white fw-bold" type="button" aria-expanded="false">
                     Filters
                 </a>
                 
@@ -36,8 +65,9 @@
                     </button>
                 </div>
             </form>
-
-            <div class="d-flex align-items-center gap-5">
+    
+            <div class="d-flex align-items-center gap-2">
+                {{user.username}}
                 {% if user.is_authenticated %}
                     <form method="post" action="{% url 'logout' %}" class="d-inline">
                         {% csrf_token %}
