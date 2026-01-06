@@ -1,14 +1,12 @@
   body {
             background-color: #333333; 
             
-            /* Rimuove i margini bianchi di default del browser */
             margin: 0;
             padding: 0;
             
             /* Assicura che il colore copra tutto lo schermo anche se la pagina è vuota */
             min-height: 100vh; 
             
-            /* Cambia il colore del testo in bianco per renderlo leggibile */
             color: white; 
         }
         
@@ -17,7 +15,7 @@
         }
 
         .imdb-logo {
-            background-color: #f9b404; /* Il giallo IMDb */
+            background-color: #F5DE50;
             color: #000;
             font-weight: 900;
             padding: 2px 8px;
@@ -38,5 +36,9 @@
         /* Rende il form di ricerca flessibile per occupare lo spazio centrale */
         .search-container {
             flex-grow: 1;
-            max-width: 800px; /* Limite massimo larghezza come sito vero */
+            max-width: 800px;
+        }
+
+        .text-white {
+            color: white !important;
         }

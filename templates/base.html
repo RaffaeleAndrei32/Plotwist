@@ -21,9 +21,11 @@
                 <a class="navbar-brand me-3" href="{% url 'home' %}">
                     <span class="imdb-logo">PloTwist</span>
                 </a>
-                <a class="btn text-white fw-bold d-flex align-items-center gap-2 border-0" href="#">
-                    <i class="bi bi-list fs-5"></i> Menu
+                <a href="" class="btn text-white fw-bold" type="button" aria-expanded="false">
+                    Filters
                 </a>
+                
+                {% block username %}{% endblock %}
             </div>
 
             <form class="d-flex search-container mx-3">
@@ -36,10 +38,25 @@
             </form>
 
             <div class="d-flex align-items-center gap-5">
-                <a href="#" class="nav-link text-white">Sign In</a>
-                <!-- <a href="{% url 'register_user' %}" class="nav-link text-white">Register</a> -->
+                {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'logout' %}" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn text-white fw-bold">Log out</button>
+                    </form>
+                {% else %}
+        
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sign in
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="{% url 'login' %}" class="dropdown-item" href="#">as user</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="{% url 'admin:index' %}" class="dropdown-item" href="#">as admin</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Register
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -48,7 +65,9 @@
                         <li><a href="{% url 'register_moderator' %}" class="dropdown-item" href="#">as moderator</a></li>
                     </ul>
                 </div>
+                {% endif %}
             </div>
+
         </div>
     </nav>
 
