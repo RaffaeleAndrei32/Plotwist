@@ -54,13 +54,6 @@
                 <a href="{% url 'home' %}" class="btn text-white fw-bold" type="button" aria-expanded="false">
                     Filters
                 </a>
-                {% if user.is_authenticated %}
-                    {% if user.is_staff or user|has_group:"Moderators" %}
-                    <a href="{% url 'home' %}" class="btn text-white fw-bold" type="button" aria-expanded="false">
-                        Add movie
-                    </a>
-                    {% endif %}
-                {% endif %}
             </div>
 
             <form class="d-flex search-container mx-3">
@@ -74,20 +67,32 @@
     
             <div class="d-flex align-items-center gap-2">
                 {% if user.is_authenticated %}
-                <div class="text-white me-2">
-                    <i class="bi bi-person-circle"></i> {{ user.username }}
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i> {{ user.username }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        {% if user.is_staff or user|has_group:"Moderators" %}
+                        <li><a href="{% url 'home' %}" class="dropdown-item" href="#">add movie</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        {% endif %}
+                        <li>
+                            <form method="post" action="{% url 'logout' %}">
+                                {% csrf_token %}
+                                <button type="submit" class="dropdown-item fw-bold text-danger">
+                                    <i class="bi bi-box-arrow-right me-2"></i>Log out
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
                 </div>
-                <form method="post" action="{% url 'logout' %}" class="d-inline">
-                    {% csrf_token %}
-                    <button type="submit" class="btn text-white fw-bold">Log out</button>
-                </form>
                 {% else %}
-        
                 <div class="dropdown">
                     <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Sign in
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         <li><a href="{% url 'login' %}" class="dropdown-item" href="#">as user</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a href="{% url 'admin:index' %}" class="dropdown-item" href="#">as admin</a></li>
@@ -97,7 +102,7 @@
                     <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Register
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         <li><a href="{% url 'register_user' %}" class="dropdown-item" href="#">as user</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a href="{% url 'register_moderator' %}" class="dropdown-item" href="#">as moderator</a></li>
