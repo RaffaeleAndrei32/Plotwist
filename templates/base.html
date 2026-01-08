@@ -2,6 +2,7 @@
 {% load auth_extras %}
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,9 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block extra_css %}{% endblock %}
 </head>
+
 <body>
    {% if user.is_authenticated and request.GET.login == "ok" %}
-
     <div class="modal fade text-black" id="info" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -27,12 +28,11 @@
             Congratulations! You have successfully logged in.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+            <button type="button" class="btn btn-warning fw-bold" data-bs-dismiss="modal">ok</button>
           </div>
         </div>
       </div>
     </div>
-
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var myModal = new bootstrap.Modal(document.getElementById('info'));
@@ -42,8 +42,6 @@
     {% endif %}
 
 
-
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-imdb-black py-2">
         <div class="container-fluid px-4">
             
@@ -51,9 +49,18 @@
                 <a class="navbar-brand me-3" href="{% url 'home' %}">
                     <span class="imdb-logo">PloTwist</span>
                 </a>
-                <a href="{% url 'home' %}" class="btn text-white fw-bold" type="button" aria-expanded="false">
-                    Filters
-                </a>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="{% url 'register_user' %}" class="dropdown-item" href="#">by realese date</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="{% url 'register_moderator' %}" class="dropdown-item" href="#">by director</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="{% url 'register_moderator' %}" class="dropdown-item" href="#">by genre</a></li>
+                    </ul>
+                </div>
             </div>
 
             <form class="d-flex search-container mx-3">
@@ -70,11 +77,12 @@
 
                 <div class="dropdown">
                     <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person-circle"></i> {{ user.username }}
+                        <i class="bi bi-person-circle"></i>
+                        {{ user.username }}
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         {% if user.is_staff or user|has_group:"Moderators" %}
-                        <li><a href="{% url 'home' %}" class="dropdown-item" href="#">add movie</a></li>
+                        <li><a href="{% url 'movies:add_movie' %}" class="dropdown-item" href="#">add movie</a></li>
                         <li><hr class="dropdown-divider"></li>
                         {% endif %}
                         <li>

@@ -1,9 +1,12 @@
 from django.urls import path
-from django.contrib.auth import views as auth_views
 from .views import *
 
 
 
+app_name = 'movies'
+
+
+
 urlpatterns = [
-    
+    path("add_movie/", MovieCreateView.as_view(), name="add_movie"),
 ]

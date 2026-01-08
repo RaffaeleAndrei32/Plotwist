@@ -27,6 +27,7 @@ from config.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r"^$|^\/$|^home\/$",home,name="home"),
+    path('accounts/', include('django.contrib.auth.urls')),
     
     path('users/', include('apps.users.urls')),
     path('movies/', include('apps.movies.urls')),

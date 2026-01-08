@@ -45,10 +45,10 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
 
-    'users',
-    'movies',
-    'reviews',
-    'recommendations',
+    'apps.users',
+    'apps.movies',
+    'apps.reviews',
+    'apps.recommendations',
 ]
 
 MIDDLEWARE = [
@@ -142,6 +142,12 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
+LOGIN_URL = 'login'
+
 LOGIN_REDIRECT_URL = '/?login=ok'
 
 LOGOUT_REDIRECT_URL = 'login'
+
+# BASE_DIR points to manage.py location
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

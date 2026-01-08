@@ -1,10 +1,9 @@
   body {
-            background-color: #333333; 
+            background-color: #262626; 
             
             margin: 0;
             padding: 0;
             
-            /* Assicura che il colore copra tutto lo schermo anche se la pagina è vuota */
             min-height: 100vh; 
             
             color: white; 
@@ -15,7 +14,7 @@
         }
 
         .imdb-logo {
-            background-color: #F5DE50;
+            background-color: #fcd305;
             color: #000;
             font-weight: 900;
             padding: 2px 8px;
@@ -27,13 +26,13 @@
             border: none;
         }
         .search-input:focus {
-            box-shadow: none; /* Rimuove il bordo blu di default */
+            box-shadow: none;
         }
         .nav-link {
-            font-weight: 600; /* Testo leggermente grassetto */
+            font-weight: 600;
             font-size: 0.9rem;
         }
-        /* Rende il form di ricerca flessibile per occupare lo spazio centrale */
+
         .search-container {
             flex-grow: 1;
             max-width: 800px;
