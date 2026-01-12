@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}My Watchlist{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="">
+            <h1>My Watchlist</h1>
+        </div>
+    </div>
+
+    {% if movies %}
+        <div class="row">
+            {% for movie in movies %}
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="{% url 'movies:movie_info' movie.pk %}" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm">
+                            {% if movie.poster %}
+                                <img src="{{ movie.poster.url }}" class="card-img-top" alt="{{ movie.title }}" style="height: 250px; object-fit: cover;">
+                            {% else %}
+                                <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">
+                                    <span>No Image</span>
+                                </div>
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ movie.title }}</h5>
+                                <p class="card-text text-muted small">
+                                    <strong>Release Date:</strong> {{ movie.release_date|date:"Y" }}<br>
+                                    <strong>Duration:</strong> {{ movie.length }} min<br>
+                                    <strong>Director:</strong> {{ movie.director }}
+                                </p>
+                                {% if movie.genres.all %}
+                                    <p class="card-text">
+                                        <small>
+                                            {% for genre in movie.genres.all %}
+                                                <span class="badge bg-warning text-dark">{{ genre.name }}</span>
+                                            {% endfor %}
+                                        </small>
+                                    </p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if is_paginated %}
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    {% if page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link text-dark bg-warning border-warning" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                        </li>
+                    {% endif %}
+
+                    <li class="page-item active">
+                        <span class="page-link bg-white text-dark border-white">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+                    </li>
+
+                    {% if page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link text-dark bg-warning border-warning" href="?page={{ page_obj.next_page_number }}">Next</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+    {% else %}
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Watchlist is empty</h4>
+            <p>You haven't added any movies to your watchlist yet. <a href="{% url 'movies:list_movies' %}" class="alert-link">Start adding movies!</a></p>
+        </div>
+    {% endif %}
+
+    <div class="mt-4">
+        <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary">Back to Movies</a>
+    </div>
+</div>
+{% endblock %}

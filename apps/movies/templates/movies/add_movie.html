@@ -6,17 +6,17 @@
 {% block extra_css %}<link rel="stylesheet" href="{% static 'users/css/style.css' %}">{% endblock %}
 
 {% block content %}
-<div class="card">
+<div class="card col-md-6">
   <div class="card-header">
       <h3>Add Movie </h3>
   </div>
   <div class="card-body">
     <form method="post" enctype="multipart/form-data"> {% csrf_token %}
         {{form | crispy}}
+        <a href="{% url 'home' %}" class="btn btn-secondary">
+          exit
+        </a>
         <input type="submit" class="btn btn-warning fw-bold" value="ok">
-        <a href="{% url 'home' %}" class="btn btn-danger text-dark fw-bold">
-                exit
-            </a>
     </form>
   </div>
 </div>

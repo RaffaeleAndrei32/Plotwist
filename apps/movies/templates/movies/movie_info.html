@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ movie.title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">{{ movie.title }}</h1>
+    
+    <div class="row mb-4">
+        <div class="col-12">
+            {% if movie.poster %}
+                <img src="{{ movie.poster.url }}" alt="{{ movie.title }}" class="img-fluid rounded shadow" style="max-width: 100%; max-height: 500px; object-fit: cover; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal">
+            {% else %}
+                <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded" style="height: 500px;">
+                    <span>No Image Available</span>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Modal per visualizzare l'immagine in grande -->
+    {% if movie.poster %}
+    <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="{{ movie.poster.url }}" alt="{{ movie.title }}" class="img-fluid w-100">
+                </div>
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="mb-2">
+                        <strong>Release Date:</strong> {{ movie.release_date|date:"d F Y" }}
+                    </p>
+                    <p class="mb-2">
+                        <strong>Duration:</strong> {{ movie.length }} minutes
+                    </p>
+                    <p class="mb-2">
+                        <strong>Director:</strong> <a href="#" class="text-decoration-none">{{ movie.director }}</a>
+                    </p>
+                </div>
+            </div>
+
+            {% if movie.genres.all %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <strong>Genres:</strong>
+                        <div class="mt-2">
+                            {% for genre in movie.genres.all %}
+                                <span class="badge bg-warning text-dark">{{ genre.name }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if movie.actors.all %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <strong>Cast:</strong>
+                        <ul class="mt-2 mb-0">
+                            {% for actor in movie.actors.all %}
+                                <li><a href="#" class="text-decoration-none">{{ actor.name }} {{ actor.surname }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if movie.plot %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <strong>Plot:</strong>
+                        <p class="mt-2 mb-0">{{ movie.plot }}</p>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% comment %} <div class="card mb-3">
+                <div class="card-body">
+                    <p class="mb-2">
+                        <small class="text-muted">Added by: <strong>{{ movie.logged_by.username }}</strong></small>
+                    </p>
+                </div>
+            </div> {% endcomment %}
+
+            {% comment %} {% if user.is_authenticated %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        {% if in_watchlist %}
+                            <form method="post" action="{% url 'movies:remove_from_watchlist' movie.pk %}" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger fw-bold">
+                                    <i class="bi bi-bookmark-fill me-2"></i>Remove from Watchlist
+                                </button>
+                            </form>
+                        {% else %}
+                            <form method="post" action="{% url 'movies:add_to_watchlist' movie.pk %}" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-warning text-dark fw-bold">
+                                    <i class="bi bi-bookmark me-2"></i>Add to Watchlist
+                                </button>
+                            </form>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %} {% endcomment %}
+
+            <div class="mt-4 d-flex gap-2 align-items-center flex-wrap justify-content-center">
+                <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary">Back to Movies</a>
+
+                {% if user.is_authenticated %}
+                    {% if in_watchlist %}
+                        <form method="post" action="{% url 'movies:remove_from_watchlist' movie.pk %}" class="m-0">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger fw-bold">
+                                <i class="bi bi-bookmark-fill me-2"></i>Remove from Watchlist
+                            </button>
+                        </form>
+                    {% else %}
+                        <form method="post" action="{% url 'movies:add_to_watchlist' movie.pk %}" class="m-0">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-warning text-dark fw-bold">
+                                <i class="bi bi-bookmark me-2"></i>Add to Watchlist
+                            </button>
+                        </form>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

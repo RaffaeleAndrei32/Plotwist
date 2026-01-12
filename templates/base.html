@@ -49,24 +49,30 @@
                 <a class="navbar-brand me-3" href="{% url 'home' %}">
                     <span class="imdb-logo">PloTwist</span>
                 </a>
-                <div class="dropdown">
+                 <a class="btn text-white fw-bold" href="{% url 'movies:list_movies' %}">
+                    Movies
+                </a>
+                <a class="btn text-white fw-bold" href="{% url 'movies:watchlist' %}">
+                    Watchlist
+                </a>
+                {% comment %} <div class="dropdown">
                     <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Filter
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a href="{% url 'home' %}" class="dropdown-item" href="#">by realese date</a></li>
+                        <li><a href="{% url 'movies:list_movies' %}?sort=year" class="dropdown-item">by release date</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a href="{% url 'home' %}" class="dropdown-item" href="#">by director</a></li>
+                        <li><a href="{% url 'movies:list_movies' %}" class="dropdown-item">by director</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a href="{% url 'home' %}" class="dropdown-item" href="#">by genre</a></li>
+                        <li><a href="{% url 'movies:list_movies' %}" class="dropdown-item">by genre</a></li>
                     </ul>
-                </div>
+                </div> {% endcomment %}
             </div>
 
-            <form class="d-flex search-container mx-3">
+            <form class="d-flex search-container mx-3" action="{% url 'movies:list_movies' %}" method="get">
                 <div class="input-group">
-                    <input type="text" class="form-control search-input" placeholder="Search movie title" aria-label="Search">
-                    <button class="btn btn-light text-secondary" type="button">
+                    <input type="text" class="form-control search-input" name="search" placeholder="Search movie title" aria-label="Search">
+                    <button class="btn btn-light text-secondary" type="submit">
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
@@ -74,7 +80,6 @@
     
             <div class="d-flex align-items-center gap-2">
                 {% if user.is_authenticated %}
-
                 <div class="dropdown">
                     <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-person-circle"></i>
@@ -82,14 +87,14 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         {% if user.is_staff or user|has_group:"Moderators" %}
-                        <li><a href="{% url 'movies:add_movie' %}" class="dropdown-item" href="#">add movie</a></li>
+                        <li><a href="{% url 'movies:add_movie' %}" class="dropdown-item" href="#">Add movie</a></li>
                         <li><hr class="dropdown-divider"></li>
                         {% endif %}
                         <li>
                             <form method="post" action="{% url 'logout' %}">
                                 {% csrf_token %}
                                 <button type="submit" class="dropdown-item fw-bold text-danger">
-                                    <i class="bi bi-box-arrow-right me-2"></i>Log out
+                                    <i class="bi bi-box-arrow-right me-2"></i>log out
                                 </button>
                             </form>
                         </li>
@@ -124,7 +129,7 @@
 
     <div class="container" style="margin-top:50px">
         <div class="row justify-content-center">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
             <center>
                 {% block content %}{%  endblock %}
                 <br>
