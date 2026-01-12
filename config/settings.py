@@ -139,6 +139,9 @@ STATICFILES_DIRS = [
 # servel folder for collectstatic
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
+
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 

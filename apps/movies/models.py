@@ -63,10 +63,21 @@ class Movie(models.Model):
         blank=True
     )
     
+    poster = models.ImageField(
+        upload_to='movies/posters/',
+        null=True,
+        blank=True,
+        help_text="Movie poster image (optional)"
+    )
+    
+    plot = models.TextField(
+        null=True,
+        blank=True,
+        help_text="Movie plot synopsis (optional)"
+    )
+    
     def __str__(self):
         return self.title
 
     def clean(self):
         super().clean()
-        # Qui potrai aggiungere i tuoi controlli personalizzati 
-        # (es. il limite dei 3 generi che abbiamo discusso)

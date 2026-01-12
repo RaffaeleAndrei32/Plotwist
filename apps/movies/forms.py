@@ -8,14 +8,16 @@ class MovieForm(forms.ModelForm):
     class Meta:
         model = Movie
 
-        fields = ['title', 'release_date', 'length', 'director', 'actors', 'genres']
+        fields = ['title', 'release_date', 'length', 'director', 'actors', 'genres', 'poster', 'plot']
         widgets = {
             'release_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'length': forms.NumberInput(attrs={'class': 'form-control'}),
+            'length': forms.NumberInput(attrs={'class': 'form-control', 'min': '1'}),
             'director': forms.Select(attrs={'class': 'form-select'}),
             'actors': forms.SelectMultiple(attrs={'class': 'form-select'}),
             'genres': forms.SelectMultiple(attrs={'class': 'form-select'}),
+            'poster': forms.FileInput(attrs={'class': 'form-control', 'accept': 'image/*'}),
+            'plot': forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
         }
 
     def clean_genres(self):
