@@ -8,25 +8,11 @@
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="card shadow-lg">
-                <div class="card-header bg-primary text-white">
+                <div class="card-header">
                     <h4 class="mb-0">Edit Review for {{ movie.title }}</h4>
                 </div>
-                <div class="card-body">
-{% comment %} 
-                    <form method="post" novalidate>
-                        {% crispy form %}
-                        <div class="row mt-4">
-                            <div class="col-12 d-flex gap-2 justify-content-center">
-                                <a href="{% url 'movies:movie_info' movie.pk %}" class="btn btn-secondary fw-bold">
-                                    <i class="bi bi-x-circle me-2"></i>Cancel
-                                </a>
-                                <button type="submit" class="btn btn-primary fw-bold">
-                                    <i class="bi bi-check-circle me-2"></i>Update Review
-                                </button>                          
-                            </div>
-                        </div>
-                    </form> {% endcomment %}
-                    
+
+                <div class="card-body">                    
                     <form method="post" novalidate>
                         {% csrf_token %}
                         
@@ -37,7 +23,10 @@
                                 <a href="{% url 'movies:movie_info' movie.pk %}" class="btn btn-secondary fw-bold">
                                     <i class="bi bi-x-circle me-2"></i>Cancel
                                 </a>
-                                <button type="submit" class="btn btn-primary fw-bold">
+                                <a href="{% url 'reviews:delete_review' object.pk %}" class="btn btn-danger fw-bold">
+                                    <i class="bi bi-trash me-2"></i>Delete Review
+                                </a>
+                                <button type="submit" class="btn btn-warning fw-bold">
                                     <i class="bi bi-check-circle me-2"></i>Update Review
                                 </button>
                             </div>

@@ -11,7 +11,7 @@
         <div class="col-md-8 offset-md-2">
             <div class="card">
                 <div class="card-body">
-                    <form method="post">
+                    <form method="post" novalidate>
                         {% csrf_token %}
                         {{ form | crispy }}
                         <div class="d-flex gap-2 justify-content-center mt-3">

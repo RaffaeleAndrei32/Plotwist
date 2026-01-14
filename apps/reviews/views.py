@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from apps.movies.models import Movie
@@ -51,6 +51,19 @@ class EditReviewView(UserPassesTestMixin, UpdateView):
         context = super().get_context_data(**kwargs)
         context['movie'] = self.object.movie
         return context
+    
+    def get_success_url(self):
+        return reverse_lazy('movies:movie_info', kwargs={'pk': self.object.movie.pk})
+
+
+class DeleteReviewView(UserPassesTestMixin, DeleteView):
+    model = Review
+    template_name = 'reviews/review_confirm_delete.html'
+    pk_url_kwarg = 'review_pk'
+    
+    def test_func(self):
+        review = self.get_object()
+        return review.user == self.request.user
     
     def get_success_url(self):
         return reverse_lazy('movies:movie_info', kwargs={'pk': self.object.movie.pk})

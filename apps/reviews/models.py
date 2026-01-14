@@ -15,10 +15,10 @@ class Review(models.Model):
     
     rating = models.IntegerField(
         validators=[
-            MinValueValidator(0),
+            MinValueValidator(1),
             MaxValueValidator(10)
         ],
-        help_text="Rating from 0 to 10"
+        help_text="Rating from 1 to 10"
     )
     
     created_at = models.DateTimeField(auto_now_add=True)

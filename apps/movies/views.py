@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.views.generic import CreateView, ListView, DetailView
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.urls import reverse_lazy
@@ -7,8 +8,7 @@ from django.views import View
 import datetime
 
 from .models import Movie, Director, Genre
-from .forms import MovieForm
-
+from .forms import MovieForm, DATE_MIN
 
 
 class MovieListView(ListView):
@@ -21,12 +21,15 @@ class MovieListView(ListView):
         context = super().get_context_data(**kwargs)
         context['directors'] = Director.objects.all()
         context['genres'] = Genre.objects.all()
-        
         current_year = datetime.date.today().year
-        context['years'] = range(1870, current_year + 10, 10)
-        
-        return context
+        context['years'] = list(range(DATE_MIN.year, current_year + 1, 10))
     
+        # Se l'ultimo anno nel range non è l'anno attuale, lo aggiungiamo manualmente
+        if context['years'][-1] != current_year:
+            context['years'].append(current_year)
+            
+        return context
+        
     def get_queryset(self):
         queryset = Movie.objects.all()
         

@@ -47,6 +47,12 @@
                     <p class="mb-2">
                         <strong>Director:</strong> <a href="#" class="text-decoration-none">{{ movie.director }}</a>
                     </p>
+                    {% if reviews %}
+                    <p class="mb-0">
+                        <strong>Average Rating:</strong> 
+                        <span class="badge bg-info text-dark fs-6">{{ movie.get_average_rating }}/10</span>
+                    </p>
+                    {% endif %}
                 </div>
             </div>
 
@@ -85,9 +91,9 @@
                 </div>
             {% endif %}
 
-            
+
             <div class="mt-4 d-flex gap-2 align-items-center flex-wrap justify-content-center">
-                <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary">Back to Movies</a>
+                <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary fw-bold">Back</a>
 
                 {% if user.is_authenticated %}
                     {% if in_watchlist %}

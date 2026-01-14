@@ -87,7 +87,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         {% if user.is_staff or user|has_group:"Moderators" %}
-                        <li><a href="{% url 'movies:add_movie' %}" class="dropdown-item" href="#">Add movie</a></li>
+                        <li><a href="{% url 'movies:add_movie' %}" class="dropdown-item" href="#"><i class="bi bi-film"></i> Add movie</a></li>
                         <li><hr class="dropdown-divider"></li>
                         {% endif %}
                         <li>

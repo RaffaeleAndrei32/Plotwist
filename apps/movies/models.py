@@ -79,5 +79,11 @@ class Movie(models.Model):
     def __str__(self):
         return self.title
 
+    def get_average_rating(self):
+        """Calcola il voto medio da tutte le review del film"""
+        from django.db.models import Avg
+        avg_rating = self.reviews.aggregate(Avg('rating'))['rating__avg']
+        return round(avg_rating, 1) if avg_rating is not None else 0
+
     def clean(self):
         super().clean()
