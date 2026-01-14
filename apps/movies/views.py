@@ -64,6 +64,12 @@ class MovieDetailView(DetailView):
         # Controlla se l'utente ha aggiunto questo film alla watchlist
         if self.request.user.is_authenticated:
             context['in_watchlist'] = self.object.watched_by.filter(id=self.request.user.id).exists()
+            # Controlla se l'utente ha già scritto una review per questo film
+            context['user_review'] = self.object.reviews.filter(user=self.request.user).first()
+        
+        # Aggiungi tutte le review del film
+        context['reviews'] = self.object.reviews.all()
+        
         return context
 
 

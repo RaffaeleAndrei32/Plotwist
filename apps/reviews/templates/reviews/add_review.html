@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Add Review - {{ movie.title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Write a Review for {{ movie.title }}</h1>
+    
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                        <div class="d-flex gap-2 justify-content-center mt-3">
+                            <a href="{% url 'movies:movie_info' movie.pk %}" class="btn btn-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-warning fw-bold">Post Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -33,7 +33,7 @@ urlpatterns = [
     
     path('users/', include('apps.users.urls')),
     path('movies/', include('apps.movies.urls')),
-    # path('reviews/', include('apps.reviews.urls')),
+    path('reviews/', include('apps.reviews.urls')),
     # path('recommendations/', include('apps.recommendations.urls')),
 ]
 

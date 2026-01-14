@@ -17,7 +17,7 @@
             {% endif %}
         </div>
     </div>
-    
+
     <!-- Modal per visualizzare l'immagine in grande -->
     {% if movie.poster %}
     <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
@@ -32,6 +32,7 @@
     </div>
     {% endif %}
     
+
 
     <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -84,36 +85,7 @@
                 </div>
             {% endif %}
 
-            {% comment %} <div class="card mb-3">
-                <div class="card-body">
-                    <p class="mb-2">
-                        <small class="text-muted">Added by: <strong>{{ movie.logged_by.username }}</strong></small>
-                    </p>
-                </div>
-            </div> {% endcomment %}
-
-            {% comment %} {% if user.is_authenticated %}
-                <div class="card mb-3">
-                    <div class="card-body">
-                        {% if in_watchlist %}
-                            <form method="post" action="{% url 'movies:remove_from_watchlist' movie.pk %}" style="display: inline;">
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn-danger fw-bold">
-                                    <i class="bi bi-bookmark-fill me-2"></i>Remove from Watchlist
-                                </button>
-                            </form>
-                        {% else %}
-                            <form method="post" action="{% url 'movies:add_to_watchlist' movie.pk %}" style="display: inline;">
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn-warning text-dark fw-bold">
-                                    <i class="bi bi-bookmark me-2"></i>Add to Watchlist
-                                </button>
-                            </form>
-                        {% endif %}
-                    </div>
-                </div>
-            {% endif %} {% endcomment %}
-
+            
             <div class="mt-4 d-flex gap-2 align-items-center flex-wrap justify-content-center">
                 <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary">Back to Movies</a>
 
@@ -133,8 +105,48 @@
                             </button>
                         </form>
                     {% endif %}
+                    {% if user_review %}
+                        <a href="{% url 'reviews:edit_review' user_review.pk %}" class="btn btn-info fw-bold">
+                            <i class="bi bi-pencil me-2"></i>Edit Review
+                        </a>
+                    {% else %}
+                        <a href="{% url 'reviews:add_review' movie.pk %}" class="btn btn-info fw-bold">
+                            <i class="bi bi-pencil me-2"></i>Write Review
+                        </a>
+                    {% endif %}
                 {% endif %}
             </div>
+
+            {% if reviews %}
+                <div class="mt-5">
+                    <h3 class="mb-4">Reviews</h3>
+                    {% for review in reviews %}
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="mb-1">{{ review.title }}</h5>
+                                        <small class="text-muted">by <strong>{{ review.user.username }}</strong></small>
+                                    </div>
+                                    <div class="badge bg-warning text-dark fs-6">
+                                        {{ review.rating }}/10
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">{{ review.text }}</p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <small>{{ review.created_at|date:"d M Y \a\t H:i" }}</small>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="alert alert-info mt-5">
+                    <p class="mb-0">No reviews yet. <strong>Be the first to write one!</strong></p>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>

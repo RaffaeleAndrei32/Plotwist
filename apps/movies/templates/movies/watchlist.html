@@ -74,9 +74,10 @@
             <p>You haven't added any movies to your watchlist yet. <a href="{% url 'movies:list_movies' %}" class="alert-link">Start adding movies!</a></p>
         </div>
     {% endif %}
-
+    {% comment %} 
     <div class="mt-4">
         <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary">Back to Movies</a>
-    </div>
+    </div> 
+    {% endcomment %}
 </div>
 {% endblock %}
