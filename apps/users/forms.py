@@ -24,6 +24,7 @@ class ExtendedUserCreationForm(UserCreationForm):
 
 class ModeratorCreationForm(ExtendedUserCreationForm):
     
+    # Override save method to add user to "Moderators" group
     def save(self, commit=True):
         user = super().save(commit) 
         #g = Group.objects.get(name="Moderators") 

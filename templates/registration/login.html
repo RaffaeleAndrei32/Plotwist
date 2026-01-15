@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'navbar.html' %}
 {% load static %}
 {% load crispy_forms_tags %} 
 
@@ -16,8 +16,8 @@
                 </div>
                 <div class="card-body">
                     <form method="post"> {% csrf_token %}
-                    {{form | crispy}}
-                    <input type="submit" class="btn btn-warning fw-bold" value="sign in">
+                        {{form | crispy}}
+                        <input type="submit" class="btn btn-warning fw-bold" value="sign in">
                     </form>
                 </div>
                 <div class="card-footer text-muted">
