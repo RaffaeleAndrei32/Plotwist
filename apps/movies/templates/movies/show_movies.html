@@ -1,17 +1,14 @@
-{% extends 'base.html' %}
+{% extends 'navbar.html' %}
 
 {% block title %}Movies{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
-    <div class="row mb-4">
-        <div class="">
-            <h1>All Movies</h1>
-        </div>
-    </div>
-
     <!-- Filter Form -->
-    <div class="card mb-4 bg-light">
+    {% comment %} <div class="card mb-4 bg-light">
+        <div class="card-header">
+           <h2>Filter Movie </h2>
+        </div>
         <div class="card-body">
             <form method="get">
                 <div class="row g-3 mb-3">
@@ -51,61 +48,31 @@
                 </div>
             </form>
         </div>
+    </div> {% endcomment %}
+    <div class="card mb-4 bg-light">
+        <div class="card-header">
+           <h2>Filter Movie </h2>
+        </div>
+        <div class="card-body">
+            {% include 'movies/includes/_filter_form.html' %}
+
+        </div>
     </div>
 
     {% if movies %}
         <div class="row">
             {% for movie in movies %}
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <a href="{% url 'movies:movie_info' movie.pk %}" class="text-decoration-none text-dark">
-                            {% if movie.poster %}
-                                <img src="{{ movie.poster.url }}" class="card-img-top" alt="{{ movie.title }}" style="height: 250px; object-fit: cover;">
-                            {% else %}
-                                <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">
-                                    <span>No Image</span>
-                                </div>
-                            {% endif %}
-                            <div class="card-body">
-                                <h5 class="card-title">{{ movie.title }}</h5>
-                                <p class="card-text text-muted small">
-                                    <strong>Release Date:</strong> {{ movie.release_date|date:"Y" }}<br>
-                                    <strong>Duration:</strong> {{ movie.length }} min<br>
-                                    <strong>Director:</strong> {{ movie.director }}
-                                </p>
-                                {% if movie.genres.all %}
-                                    <p class="card-text">
-                                        <small>
-                                            {% for genre in movie.genres.all %}
-                                                <span class="badge bg-warning text-dark">{{ genre.name }}</span>
-                                            {% endfor %}
-                                        </small>
-                                    </p>
-                                {% endif %}
-                                {% if movie.actors.all %}
-                                    <p class="card-text small text-secondary">
-                                        <strong>Cast:</strong> {{ movie.actors.all|join:", " }}
-                                    </p>
-                                {% endif %}
-                                <p class="card-text small">
-                                    <strong>Added by:</strong> {{ movie.logged_by.username }}
-                                </p>
-                            </div>
-                        </a>
-                
-                    </div>
-                </div>
+                {% include 'movies/includes/movie_card.html' %}
             {% endfor %}
         </div>
 
-        <!-- Pagination -->
+        {% include 'movies/includes/_pagination.html' %}
+        {% comment %} <!-- Pagination -->
+
         {% if is_paginated %}
             <nav aria-label="Page navigation" class="mt-4">
                 <ul class="pagination justify-content-center">
                     {% if page_obj.has_previous %}
-                        {% comment %} <li class="page-item">
-                            <a class="page-link" href="?page=1">First</a>
-                        </li> {% endcomment %}
                         <li class="page-item">
                             <a class="page-link text-dark bg-warning border-warning" href="?page={{ page_obj.previous_page_number }}">Previous</a>
                         </li>
@@ -118,14 +85,11 @@
                     {% if page_obj.has_next %}
                         <li class="page-item">
                             <a class="page-link text-dark bg-warning border-warning" href="?page={{ page_obj.next_page_number }}">Next</a>
-                        {% comment %} </li>
-                        <li class="page-item">
-                            <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-                        </li> {% endcomment %}
                     {% endif %}
                 </ul>
             </nav>
-        {% endif %}
+        {% endif %} {% endcomment %}
+
     {% else %}
         <div class="alert alert-warning" role="alert">
             {% if request.GET.search %}

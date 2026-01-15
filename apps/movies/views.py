@@ -11,49 +11,59 @@ from .models import Movie, Director, Genre
 from .forms import MovieForm, DATE_MIN
 
 
-class MovieListView(ListView):
+# class MovieListView(ListView):
+#     model = Movie
+#     template_name = 'movies/show_movies.html'
+#     context_object_name = 'movies'
+#     paginate_by = 9
+    
+#     def get_context_data(self, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         context['directors'] = Director.objects.all()
+#         context['genres'] = Genre.objects.all()
+#         current_year = datetime.date.today().year
+#         context['years'] = list(range(DATE_MIN.year, current_year + 1, 10))
+    
+#         # Se l'ultimo anno nel range non è l'anno attuale, lo aggiungiamo manualmente
+#         if context['years'][-1] != current_year:
+#             context['years'].append(current_year)
+            
+#         return context
+        
+#     def get_queryset(self):
+#         queryset = Movie.objects.all()
+        
+#         # Filtro per ricerca titolo
+#         search = self.request.GET.get('search')
+#         if search:
+#             queryset = queryset.filter(title__icontains=search)
+        
+#         genre_id = self.request.GET.get('genre')
+#         if genre_id:
+#             queryset = queryset.filter(genres__id=genre_id)
+        
+#         director_id = self.request.GET.get('director')
+#         if director_id:
+#             queryset = queryset.filter(director__id=director_id)
+        
+#         year = self.request.GET.get('year')
+#         if year:
+#             year_int = int(year)
+#             decade_end = year_int + 9
+#             queryset = queryset.filter(release_date__year__gte=year_int, release_date__year__lte=decade_end)
+        
+#         return queryset.distinct()
+
+from django_filters.views import FilterView # Importa FilterView
+from .filters import MovieFilter # Importa il file che abbiamo creato prima
+
+class MovieListView(FilterView): # Cambia da ListView a FilterView
     model = Movie
-    template_name = 'movies/movies_list.html'
+    template_name = 'movies/show_movies.html'
+    filterset_class = MovieFilter # Collega il filtro
     context_object_name = 'movies'
     paginate_by = 9
-    
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['directors'] = Director.objects.all()
-        context['genres'] = Genre.objects.all()
-        current_year = datetime.date.today().year
-        context['years'] = list(range(DATE_MIN.year, current_year + 1, 10))
-    
-        # Se l'ultimo anno nel range non è l'anno attuale, lo aggiungiamo manualmente
-        if context['years'][-1] != current_year:
-            context['years'].append(current_year)
-            
-        return context
-        
-    def get_queryset(self):
-        queryset = Movie.objects.all()
-        
-        # Filtro per ricerca titolo
-        search = self.request.GET.get('search')
-        if search:
-            queryset = queryset.filter(title__icontains=search)
-        
-        genre_id = self.request.GET.get('genre')
-        if genre_id:
-            queryset = queryset.filter(genres__id=genre_id)
-        
-        director_id = self.request.GET.get('director')
-        if director_id:
-            queryset = queryset.filter(director__id=director_id)
-        
-        year = self.request.GET.get('year')
-        if year:
-            year_int = int(year)
-            decade_end = year_int + 9
-            queryset = queryset.filter(release_date__year__gte=year_int, release_date__year__lte=decade_end)
-        
-        return queryset.distinct()
-
+    # get_queryset e get_context_data manuali non servono più!
 
 
 class MovieDetailView(DetailView):

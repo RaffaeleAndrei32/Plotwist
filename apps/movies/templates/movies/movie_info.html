@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'navbar.html' %}
 
 {% block title %}{{ movie.title }}{% endblock %}
 
@@ -45,12 +45,17 @@
                         <strong>Duration:</strong> {{ movie.length }} minutes
                     </p>
                     <p class="mb-2">
-                        <strong>Director:</strong> <a href="#" class="text-decoration-none">{{ movie.director }}</a>
+                        <strong>Director:</strong><span class="badge bg-warning text-dark">{{ movie.director }}</span>
                     </p>
                     {% if reviews %}
                     <p class="mb-0">
                         <strong>Average Rating:</strong> 
-                        <span class="badge bg-info text-dark fs-6">{{ movie.get_average_rating }}/10</span>
+                        <span class="badge bg-warning text-dark fs-6">
+                            <i class="bi bi-star-fill me-1">{{ movie.get_average_rating }}/10</i>
+                        </span>
+                    </p>
+                    <p class="card-text">
+                        <strong>Added by:</strong> {{ movie.logged_by.username }}
                     </p>
                     {% endif %}
                 </div>
@@ -73,11 +78,13 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <strong>Cast:</strong>
-                        <ul class="mt-2 mb-0">
+                
+                        <div class="mt-2">
                             {% for actor in movie.actors.all %}
-                                <li><a href="#" class="text-decoration-none">{{ actor.name }} {{ actor.surname }}</a></li>
+                                <span class="badge bg-warning text-dark">{{ actor.name }} {{ actor.surname }}</span>
                             {% endfor %}
-                        </ul>
+                        </div>
+                        
                     </div>
                 </div>
             {% endif %}
@@ -90,7 +97,7 @@
                     </div>
                 </div>
             {% endif %}
-
+            
 
             <div class="mt-4 d-flex gap-2 align-items-center flex-wrap justify-content-center">
                 <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary fw-bold">Back</a>
@@ -125,7 +132,7 @@
 
             {% if reviews %}
                 <div class="mt-5">
-                    <h3 class="mb-4">Reviews</h3>
+                    <h3 class="mb-4"> {{ reviews.count }} review{{ reviews.count|pluralize }} </h3>        
                     {% for review in reviews %}
                         <div class="card mb-3">
                             <div class="card-header">
@@ -135,7 +142,7 @@
                                         <small class="text-muted">by <strong>{{ review.user.username }}</strong></small>
                                     </div>
                                     <div class="badge bg-warning text-dark fs-6">
-                                        {{ review.rating }}/10
+                                         <i class="bi bi-star-fill me-2">{{ review.rating }}/10</i>
                                     </div>
                                 </div>
                             </div>

@@ -55,18 +55,6 @@
                 <a class="btn text-white fw-bold" href="{% url 'movies:watchlist' %}">
                     Watchlist
                 </a>
-                {% comment %} <div class="dropdown">
-                    <button class="btn dropdown-toggle text-white fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Filter
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a href="{% url 'movies:list_movies' %}?sort=year" class="dropdown-item">by release date</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a href="{% url 'movies:list_movies' %}" class="dropdown-item">by director</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a href="{% url 'movies:list_movies' %}" class="dropdown-item">by genre</a></li>
-                    </ul>
-                </div> {% endcomment %}
             </div>
 
             <form class="d-flex search-container mx-3" action="{% url 'movies:list_movies' %}" method="get">
