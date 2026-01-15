@@ -80,10 +80,21 @@ class Movie(models.Model):
         return self.title
 
     def get_average_rating(self):
-        """Calcola il voto medio da tutte le review del film"""
         from django.db.models import Avg
         avg_rating = self.reviews.aggregate(Avg('rating'))['rating__avg']
         return round(avg_rating, 1) if avg_rating is not None else 0
+
+    def get_stars_display(self):
+        avg = self.get_average_rating()
+        stars = []
+        for i in range(1, 11):
+            if avg >= i:
+                stars.append('full')
+            elif avg >= i - 0.7:
+                stars.append('half')
+            else:
+                stars.append('empty')
+        return stars
 
     def clean(self):
         super().clean()

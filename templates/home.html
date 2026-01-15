@@ -4,16 +4,14 @@
 
 {% block content %}
 
-<div class="container my-5">    
-    <div class="mb-5">
-        <h2 class="mb-4">
-            <i class="bi bi-star-fill text-warning me-2"></i>
-            Top Rated Movies of All Time
-        </h2>
-        
+<div class="container my-4">    
+    <div class="mb-5"> 
         <div class="card mb-4 bg-light">
           <div class="card-header">
-            <h2>Rated movies </h2>
+            <h2 class="mb-4">
+              <i class="bi bi-star-fill text-warning me-2"></i>
+              Top Rated Movies of All Time
+            </h2>
           </div>
           <div class="card-body">
           </div>
@@ -22,7 +20,7 @@
         {% if top_movies %}
             <div class="row">
                 {% for movie in top_movies %}
-                    {% include 'movies/includes/movie_card.html'%}
+                    {% include 'movies/includes/_movie_card.html'%}
                 {% endfor %}
             </div>
 

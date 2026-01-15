@@ -7,18 +7,17 @@ from django.views import View
 
 from .models import Movie
 from .forms import MovieForm, DATE_MIN
-from django_filters.views import FilterView # Importa FilterView
-from .filters import MovieFilter # Importa il file che abbiamo creato prima
+from django_filters.views import FilterView
+from .filters import MovieFilter
 
 
 
-class MovieListView(FilterView): # Cambia da ListView a FilterView
+class MovieListView(FilterView):
     model = Movie
-    template_name = 'movies/show_movies.html'
-    filterset_class = MovieFilter # Collega il filtro
+    template_name = 'movies/movies_list.html'
+    filterset_class = MovieFilter
     context_object_name = 'movies'
     paginate_by = 9
-    # get_queryset e get_context_data manuali non servono più!
 
 
 
@@ -30,13 +29,12 @@ class MovieDetailView(DetailView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # Controlla se l'utente ha aggiunto questo film alla watchlist
+
         if self.request.user.is_authenticated:
             context['in_watchlist'] = self.object.watched_by.filter(id=self.request.user.id).exists()
-            # Controlla se l'utente ha già scritto una review per questo film
+            
             context['user_review'] = self.object.reviews.filter(user=self.request.user).first()
         
-        # Aggiungi tutte le review del film
         context['reviews'] = self.object.reviews.all()
         
         return context
@@ -87,3 +85,19 @@ class RemoveFromWatchlistView(LoginRequiredMixin, View):
         movie = get_object_or_404(Movie, pk=pk)
         movie.watched_by.remove(request.user)
         return redirect('movies:watchlist')
+
+
+class UserMoviesListView(LoginRequiredMixin, ListView):
+    model = Movie
+    template_name = 'movies/user_movies_list.html'
+    context_object_name = 'movies'
+    paginate_by = 9
+    login_url = 'accounts:login'
+    
+    def get_queryset(self):
+        return Movie.objects.filter(logged_by=self.request.user).select_related('director', 'logged_by')
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'My Movies'
+        return context

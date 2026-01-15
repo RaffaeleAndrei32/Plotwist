@@ -1,0 +1,47 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block title %}My Reviews - Plotwist{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mb-4 bg-light">
+                <div class="card-header">
+                    <h2 class="mb-4">
+                       My Reviews
+                    </h2>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+            
+            
+            {% if reviews %}
+                <div class="alert alert-success d-flex align-items-center">
+                    <i class="bi bi-check-circle me-2"></i>
+                    You have written<strong class="mx-1">{{ paginator.count }}</strong>review{{ paginator.count|pluralize }}.
+                </div>
+                
+                <!-- Reviews List -->
+                <div class="reviews-container">
+                    {% for review in reviews %}
+                        {% include 'reviews/includes/_review_card.html'%}
+                    {% endfor %}
+                </div>
+              
+                {% include 'movies/includes/_pagination.html' %}
+            {% else %}
+                <div class="alert alert-secondary text-center py-5">
+                    <i class="bi bi-inbox fs-1"></i>
+                    <p class="mt-3">You haven't written any reviews yet.</p>
+                    <a href="{% url 'movies:list_movies' %}" class="btn btn-primary mt-3">
+                        <i class="bi bi-film me-2"></i>Explore Movies
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

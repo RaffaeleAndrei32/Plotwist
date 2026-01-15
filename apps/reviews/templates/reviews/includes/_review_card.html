@@ -1,0 +1,57 @@
+<div class="card mb-4 shadow-sm">
+    <div class="card-header bg-light d-flex justify-content-between align-items-start">
+        <div class="flex-grow-1">
+            <h5 class="card-title mb-1">
+                <a href="{% url 'movies:movie_info' review.movie.pk %}" class="text-decoration-none">
+                    {{ review.movie.title }}
+                </a>
+            </h5>
+            <small class="text-muted">
+                {{ review.movie.release_year }}
+                {% if review.movie.director %}
+                    • Directed by {{ review.movie.director.name }} {{ review.movie.director.surname }}
+                {% endif %}
+            </small>
+        </div>
+        <div class="text-end">
+            <div class="rating mb-2">
+                {% for i in "x"|rjust:"10" %}
+                    {% if forloop.counter <= review.rating %}
+                        <i class="bi bi-star-fill text-warning"></i>
+                    {% else %}
+                        <i class="bi bi-star text-muted"></i>
+                    {% endif %}
+                {% endfor %}
+                <span class="ms-2 fw-bold">{{ review.rating }}/10</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">{{ review.title }}</h6>
+        <p class="card-text">{{ review.text}}</p>
+    </div>
+    
+    <div class="card-footer bg-light d-flex justify-content-between align-items-center">
+        <small class="text-muted">
+            {% if review.created_at == review.updated_at %}
+                Posted on {{ review.created_at|date:"M d, Y" }}
+            {% else %}
+                Updated on {{ review.updated_at|date:"M d, Y" }}
+            {% endif %}
+            by <span class="fw-bold">{{ review.user.username }}</span>
+            
+        </small>
+
+        {% if user.is_authenticated and review.user == user %}
+            <div class="btn-group btn-group-sm" role="group">
+                <a href="{% url 'reviews:edit_review' review.pk %}" class="btn btn-outline-warning">
+                    <i class="bi bi-pencil"></i>
+                </a>
+                <a href="{% url 'reviews:delete_review' review.pk %}" class="btn btn-outline-danger">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>
