@@ -4,51 +4,8 @@
 
 {% block content %}
 <div class="container mt-4">
+    
     <!-- Filter Form -->
-    {% comment %} <div class="card mb-4 bg-light">
-        <div class="card-header">
-           <h2>Filter Movie </h2>
-        </div>
-        <div class="card-body">
-            <form method="get">
-                <div class="row g-3 mb-3">
-                    <div class="col-md-4">
-                        <label for="genre" class="form-label"><strong>Genre</strong></label>
-                        <select class="form-select" id="genre" name="genre">
-                            <option value="">-- all genres --</option>
-                            {% for genre in genres %}
-                                <option value="{{ genre.id }}" {% if request.GET.genre == genre.id|stringformat:"s" %}selected{% endif %}>{{ genre.name }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="director" class="form-label"><strong>Director</strong></label>
-                        <select class="form-select" id="director" name="director">
-                            <option value="">-- all directors --</option>
-                            {% for director in directors %}
-                                <option value="{{ director.id }}" {% if request.GET.director == director.id|stringformat:"s" %}selected{% endif %}>{{ director.name }} {{ director.surname }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="year" class="form-label"><strong>Release Year</strong></label>
-                        <select class="form-select" id="year" name="year">
-                            <option value="">-- all years --</option>
-                            {% for year in years %}
-                                <option value="{{ year }}" {% if request.GET.year == year|stringformat:"s" %}selected{% endif %}>{{ year }}s</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-md-12 d-flex gap-2 justify-content-end">
-                               <a href="{% url 'movies:list_movies' %}" class="btn btn-secondary fw-bold">Clear Filters</a>
-                        <button type="submit" class="btn btn-warning fw-bold">Filter</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div> {% endcomment %}
     <div class="card mb-4 bg-light">
         <div class="card-header">
            <h2>Filter Movie </h2>
@@ -59,6 +16,7 @@
         </div>
     </div>
 
+    <!-- Movie list-->
     {% if movies %}
         <div class="row">
             {% for movie in movies %}
@@ -66,29 +24,8 @@
             {% endfor %}
         </div>
 
+        <!-- Pagination -->
         {% include 'movies/includes/_pagination.html' %}
-        {% comment %} <!-- Pagination -->
-
-        {% if is_paginated %}
-            <nav aria-label="Page navigation" class="mt-4">
-                <ul class="pagination justify-content-center">
-                    {% if page_obj.has_previous %}
-                        <li class="page-item">
-                            <a class="page-link text-dark bg-warning border-warning" href="?page={{ page_obj.previous_page_number }}">Previous</a>
-                        </li>
-                    {% endif %}
-
-                    <li class="page-item active">
-                        <span class="page-link bg-white text-dark border-white">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
-                    </li>
-
-                    {% if page_obj.has_next %}
-                        <li class="page-item">
-                            <a class="page-link text-dark bg-warning border-warning" href="?page={{ page_obj.next_page_number }}">Next</a>
-                    {% endif %}
-                </ul>
-            </nav>
-        {% endif %} {% endcomment %}
 
     {% else %}
         <div class="alert alert-warning" role="alert">

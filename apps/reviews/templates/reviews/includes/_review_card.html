@@ -45,10 +45,10 @@
 
         {% if user.is_authenticated and review.user == user %}
             <div class="btn-group btn-group-sm" role="group">
-                <a href="{% url 'reviews:edit_review' review.pk %}" class="btn btn-outline-warning">
+                <a href="{% url 'reviews:edit_review' review.pk %}" class="btn btn-warning">
                     <i class="bi bi-pencil"></i>
                 </a>
-                <a href="{% url 'reviews:delete_review' review.pk %}" class="btn btn-outline-danger">
+                <a href="{% url 'reviews:delete_review' review.pk %}" class="btn btn-danger">
                     <i class="bi bi-trash"></i>
                 </a>
             </div>

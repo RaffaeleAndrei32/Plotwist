@@ -87,6 +87,7 @@ class RemoveFromWatchlistView(LoginRequiredMixin, View):
         return redirect('movies:watchlist')
 
 
+
 class UserMoviesListView(LoginRequiredMixin, ListView):
     model = Movie
     template_name = 'movies/user_movies_list.html'
