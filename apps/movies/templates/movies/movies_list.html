@@ -29,9 +29,9 @@
 
     {% else %}
         <div class="alert alert-warning" role="alert">
-            {% if request.GET.search %}
+            {% if request.GET.title %}
                 <h4 class="alert-heading">No movies found</h4>
-                <p>There are no movies with the title "{{ request.GET.search }}" in the catalog.</p>
+                <p>There are no movies with the title "{{ request.GET.title }}" in the catalog.</p>
 
             {% elif request.GET %}
                 <h4 class="alert-heading">No movies found</h4>
