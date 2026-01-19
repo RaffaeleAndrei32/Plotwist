@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Quentin",
+    "surname": "Tarantino",
+    "films": [
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Kill Bill: Vol. 1",
+      "Inglourious Basterds",
+      "Django Unchained"
+    ]
+  },
+  {
+    "name": "Martin",
+    "surname": "Scorsese",
+    "films": [
+      "Goodfellas",
+      "Taxi Driver",
+      "Raging Bull",
+      "The Departed",
+      "The Wolf of Wall Street"
+    ]
+  },
+  {
+    "name": "David",
+    "surname": "Lynch",
+    "films": [
+      "Blue Velvet",
+      "Mulholland Drive",
+      "Twin Peaks: Fire Walk with Me",
+      "Lost Highway",
+      "The Elephant Man"
+    ]
+  },
+  {
+    "name": "Christopher",
+    "surname": "Nolan",
+    "films": [
+      "The Dark Knight",
+      "Inception",
+      "Interstellar",
+      "Memento",
+      "Dunkirk"
+    ]
+  },
+  {
+    "name": "Steven",
+    "surname": "Spielberg",
+    "films": [
+      "Jaws",
+      "Raiders of the Lost Ark",
+      "Schindler's List",
+      "E.T. the Extra-Terrestrial",
+      "Jurassic Park"
+    ]
+  },
+  {
+    "name": "James",
+    "surname": "Cameron",
+    "films": [
+      "The Terminator",
+      "Aliens",
+      "Terminator 2: Judgment Day",
+      "Titanic",
+      "Avatar"
+    ]
+  },
+  {
+    "name": "David",
+    "surname": "Fincher",
+    "films": [
+      "Seven",
+      "Fight Club",
+      "Zodiac",
+      "The Social Network",
+      "Gone Girl"
+    ]
+  },
+  {
+    "name": "Peter",
+    "surname": "Jackson",
+    "films": [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Lord of the Rings: The Two Towers",
+      "The Lord of the Rings: The Return of the King",
+      "King Kong",
+      "The Hobbit: An Unexpected Journey"
+    ]
+  },
+  {
+    "name": "Alfred",
+    "surname": "Hitchcock",
+    "films": [
+      "Psycho",
+      "Rear Window",
+      "Vertigo",
+      "North by Northwest",
+      "The Birds"
+    ]
+  },
+  {
+    "name": "Stanley",
+    "surname": "Kubrick",
+    "films": [
+      "2001: A Space Odyssey",
+      "A Clockwork Orange",
+      "The Shining",
+      "Full Metal Jacket",
+      "Dr. Strangelove"
+    ]
+  },
+  {
+    "name": "Federico",
+    "surname": "Fellini",
+    "films": [
+      "La Dolce Vita",
+      "8½",
+      "Amarcord",
+      "La Strada",
+      "Nights of Cabiria"
+    ]
+  },
+  {
+    "name": "Sam",
+    "surname": "Raimi",
+    "films": [
+      "The Evil Dead",
+      "Evil Dead II",
+      "Army of Darkness",
+      "Spider-Man",
+      "Spider-Man 2"
+    ]
+  },
+  {
+    "name": "Mary",
+    "surname": "Harron",
+    "films": [
+      "American Psycho",
+      "I Shot Andy Warhol",
+      "The Notorious Bettie Page",
+      "Charlie Says",
+      "Dalíland"
+    ]
+  },
+  {
+    "name": "Park",
+    "surname": "Chan-wook",
+    "films": [
+      "Oldboy",
+      "Lady Vengeance",
+      "Sympathy for Mr. Vengeance",
+      "The Handmaiden",
+      "Decision to Leave"
+    ]
+  }
+]

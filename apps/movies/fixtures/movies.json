@@ -1,0 +1,85 @@
+[
+  {"title": "Pulp Fiction", "director": {"name": "Quentin", "surname": "Tarantino"}, "release_date": "1994-10-14", "length": 154, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "Reservoir Dogs", "director": {"name": "Quentin", "surname": "Tarantino"}, "release_date": "1992-10-23", "length": 99, "genres": ["Crime", "Thriller"], "plot": ""},
+  {"title": "Kill Bill: Vol. 1", "director": {"name": "Quentin", "surname": "Tarantino"}, "release_date": "2003-10-10", "length": 111, "genres": ["Action", "Crime"], "plot": ""},
+  {"title": "Inglourious Basterds", "director": {"name": "Quentin", "surname": "Tarantino"}, "release_date": "2009-08-21", "length": 153, "genres": ["Adventure", "War"], "plot": ""},
+  {"title": "Django Unchained", "director": {"name": "Quentin", "surname": "Tarantino"}, "release_date": "2012-12-25", "length": 165, "genres": ["Drama", "Western"], "plot": ""},
+
+  {"title": "Goodfellas", "director": {"name": "Martin", "surname": "Scorzese"}, "release_date": "1990-09-21", "length": 146, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "Taxi Driver", "director": {"name": "Martin", "surname": "Scorzese"}, "release_date": "1976-02-08", "length": 114, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "Raging Bull", "director": {"name": "Martin", "surname": "Scorzese"}, "release_date": "1980-12-19", "length": 129, "genres": ["Biography", "Drama"], "plot": ""},
+  {"title": "The Departed", "director": {"name": "Martin", "surname": "Scorzese"}, "release_date": "2006-10-06", "length": 151, "genres": ["Crime", "Thriller"], "plot": ""},
+  {"title": "The Wolf of Wall Street", "director": {"name": "Martin", "surname": "Scorzese"}, "release_date": "2013-12-25", "length": 180, "genres": ["Biography", "Comedy"], "plot": ""},
+
+  {"title": "Blue Velvet", "director": {"name": "David", "surname": "Lynch"}, "release_date": "1986-09-19", "length": 120, "genres": ["Mystery", "Thriller"], "plot": ""},
+  {"title": "Mulholland Drive", "director": {"name": "David", "surname": "Lynch"}, "release_date": "2001-10-12", "length": 147, "genres": ["Mystery", "Drama"], "plot": ""},
+  {"title": "Twin Peaks: Fire Walk with Me", "director": {"name": "David", "surname": "Lynch"}, "release_date": "1992-08-28", "length": 135, "genres": ["Mystery", "Horror"], "plot": ""},
+  {"title": "Lost Highway", "director": {"name": "David", "surname": "Lynch"}, "release_date": "1997-02-21", "length": 134, "genres": ["Mystery", "Thriller"], "plot": ""},
+  {"title": "The Elephant Man", "director": {"name": "David", "surname": "Lynch"}, "release_date": "1980-10-10", "length": 124, "genres": ["Biography", "Drama"], "plot": ""},
+
+  {"title": "The Dark Knight", "director": {"name": "Christopher", "surname": "Nolan"}, "release_date": "2008-07-18", "length": 152, "genres": ["Action", "Crime"], "plot": ""},
+  {"title": "Inception", "director": {"name": "Christopher", "surname": "Nolan"}, "release_date": "2010-07-16", "length": 148, "genres": ["Action", "Sci-Fi"], "plot": ""},
+  {"title": "Interstellar", "director": {"name": "Christopher", "surname": "Nolan"}, "release_date": "2014-11-07", "length": 169, "genres": ["Adventure", "Sci-Fi"], "plot": ""},
+  {"title": "Memento", "director": {"name": "Christopher", "surname": "Nolan"}, "release_date": "2000-10-11", "length": 113, "genres": ["Mystery", "Thriller"], "plot": ""},
+  {"title": "Dunkirk", "director": {"name": "Christopher", "surname": "Nolan"}, "release_date": "2017-07-21", "length": 106, "genres": ["War", "Thriller"], "plot": ""},
+
+  {"title": "Jaws", "director": {"name": "Steven", "surname": "Spielberg"}, "release_date": "1975-06-20", "length": 124, "genres": ["Thriller", "Adventure"], "plot": ""},
+  {"title": "Raiders of the Lost Ark", "director": {"name": "Steven", "surname": "Spielberg"}, "release_date": "1981-06-12", "length": 115, "genres": ["Action", "Adventure"], "plot": ""},
+  {"title": "Schindler's List", "director": {"name": "Steven", "surname": "Spielberg"}, "release_date": "1993-12-15", "length": 195, "genres": ["Biography", "Drama"], "plot": ""},
+  {"title": "E.T. the Extra-Terrestrial", "director": {"name": "Steven", "surname": "Spielberg"}, "release_date": "1982-06-11", "length": 115, "genres": ["Family", "Sci-Fi"], "plot": ""},
+  {"title": "Jurassic Park", "director": {"name": "Steven", "surname": "Spielberg"}, "release_date": "1993-06-11", "length": 127, "genres": ["Adventure", "Sci-Fi"], "plot": ""},
+
+  {"title": "The Terminator", "director": {"name": "James", "surname": "Cameron"}, "release_date": "1984-10-26", "length": 107, "genres": ["Action", "Sci-Fi"], "plot": ""},
+  {"title": "Aliens", "director": {"name": "James", "surname": "Cameron"}, "release_date": "1986-07-18", "length": 137, "genres": ["Action", "Sci-Fi"], "plot": ""},
+  {"title": "Terminator 2: Judgment Day", "director": {"name": "James", "surname": "Cameron"}, "release_date": "1991-07-03", "length": 137, "genres": ["Action", "Sci-Fi"], "plot": ""},
+  {"title": "Titanic", "director": {"name": "James", "surname": "Cameron"}, "release_date": "1997-12-19", "length": 195, "genres": ["Drama", "Romance"], "plot": ""},
+  {"title": "Avatar", "director": {"name": "James", "surname": "Cameron"}, "release_date": "2009-12-18", "length": 162, "genres": ["Action", "Sci-Fi"], "plot": ""},
+
+  {"title": "Seven", "director": {"name": "David", "surname": "Fincher"}, "release_date": "1995-09-22", "length": 127, "genres": ["Crime", "Thriller"], "plot": ""},
+  {"title": "Fight Club", "director": {"name": "David", "surname": "Fincher"}, "release_date": "1999-10-15", "length": 139, "genres": ["Drama", "Thriller"], "plot": ""},
+  {"title": "Zodiac", "director": {"name": "David", "surname": "Fincher"}, "release_date": "2007-03-02", "length": 157, "genres": ["Crime", "Mystery"], "plot": ""},
+  {"title": "The Social Network", "director": {"name": "David", "surname": "Fincher"}, "release_date": "2010-10-01", "length": 120, "genres": ["Biography", "Drama"], "plot": ""},
+  {"title": "Gone Girl", "director": {"name": "David", "surname": "Fincher"}, "release_date": "2014-10-03", "length": 149, "genres": ["Drama", "Mystery"], "plot": ""},
+
+  {"title": "The Lord of the Rings: The Fellowship of the Ring", "director": {"name": "Peter", "surname": "Jackson"}, "release_date": "2001-12-19", "length": 178, "genres": ["Adventure", "Fantasy"], "plot": ""},
+  {"title": "The Lord of the Rings: The Two Towers", "director": {"name": "Peter", "surname": "Jackson"}, "release_date": "2002-12-18", "length": 179, "genres": ["Adventure", "Fantasy"], "plot": ""},
+  {"title": "The Lord of the Rings: The Return of the King", "director": {"name": "Peter", "surname": "Jackson"}, "release_date": "2003-12-17", "length": 201, "genres": ["Adventure", "Fantasy"], "plot": ""},
+  {"title": "King Kong", "director": {"name": "Peter", "surname": "Jackson"}, "release_date": "2005-12-14", "length": 187, "genres": ["Adventure", "Drama"], "plot": ""},
+  {"title": "The Hobbit: An Unexpected Journey", "director": {"name": "Peter", "surname": "Jackson"}, "release_date": "2012-12-14", "length": 169, "genres": ["Adventure", "Fantasy"], "plot": ""},
+
+  {"title": "Psycho", "director": {"name": "Alfred", "surname": "Hitchock"}, "release_date": "1960-09-08", "length": 109, "genres": ["Horror", "Thriller"], "plot": ""},
+  {"title": "Rear Window", "director": {"name": "Alfred", "surname": "Hitchock"}, "release_date": "1954-09-01", "length": 112, "genres": ["Mystery", "Thriller"], "plot": ""},
+  {"title": "Vertigo", "director": {"name": "Alfred", "surname": "Hitchock"}, "release_date": "1958-05-09", "length": 128, "genres": ["Mystery", "Romance"], "plot": ""},
+  {"title": "North by Northwest", "director": {"name": "Alfred", "surname": "Hitchock"}, "release_date": "1959-07-01", "length": 136, "genres": ["Adventure", "Thriller"], "plot": ""},
+  {"title": "The Birds", "director": {"name": "Alfred", "surname": "Hitchock"}, "release_date": "1963-03-28", "length": 119, "genres": ["Horror", "Thriller"], "plot": ""},
+
+  {"title": "2001: A Space Odyssey", "director": {"name": "Stanley", "surname": "Kubrick"}, "release_date": "1968-04-03", "length": 149, "genres": ["Adventure", "Sci-Fi"], "plot": ""},
+  {"title": "A Clockwork Orange", "director": {"name": "Stanley", "surname": "Kubrick"}, "release_date": "1971-12-19", "length": 136, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "The Shining", "director": {"name": "Stanley", "surname": "Kubrick"}, "release_date": "1980-05-23", "length": 146, "genres": ["Horror", "Drama"], "plot": ""},
+  {"title": "Full Metal Jacket", "director": {"name": "Stanley", "surname": "Kubrick"}, "release_date": "1987-06-26", "length": 116, "genres": ["War", "Drama"], "plot": ""},
+  {"title": "Dr. Strangelove", "director": {"name": "Stanley", "surname": "Kubrick"}, "release_date": "1964-01-29", "length": 95, "genres": ["Comedy", "War"], "plot": ""},
+
+  {"title": "La Dolce Vita", "director": {"name": "Federico", "surname": "Fellini"}, "release_date": "1960-02-05", "length": 174, "genres": ["Drama"], "plot": ""},
+  {"title": "8 1/2", "director": {"name": "Federico", "surname": "Fellini"}, "release_date": "1963-06-25", "length": 138, "genres": ["Drama"], "plot": ""},
+  {"title": "Amarcord", "director": {"name": "Federico", "surname": "Fellini"}, "release_date": "1973-12-13", "length": 123, "genres": ["Comedy", "Drama"], "plot": ""},
+  {"title": "La Strada", "director": {"name": "Federico", "surname": "Fellini"}, "release_date": "1954-09-23", "length": 108, "genres": ["Drama"], "plot": ""},
+  {"title": "Nights of Cabiria", "director": {"name": "Federico", "surname": "Fellini"}, "release_date": "1957-02-16", "length": 110, "genres": ["Drama"], "plot": ""},
+
+  {"title": "The Evil Dead", "director": {"name": "Sam", "surname": "Raimi"}, "release_date": "1981-10-15", "length": 85, "genres": ["Horror"], "plot": ""},
+  {"title": "Evil Dead II", "director": {"name": "Sam", "surname": "Raimi"}, "release_date": "1987-03-13", "length": 84, "genres": ["Horror", "Comedy"], "plot": ""},
+  {"title": "Army of Darkness", "director": {"name": "Sam", "surname": "Raimi"}, "release_date": "1992-10-09", "length": 96, "genres": ["Comedy", "Fantasy"], "plot": ""},
+  {"title": "Spider-Man", "director": {"name": "Sam", "surname": "Raimi"}, "release_date": "2002-05-03", "length": 121, "genres": ["Action", "Fantasy"], "plot": ""},
+  {"title": "Spider-Man 2", "director": {"name": "Sam", "surname": "Raimi"}, "release_date": "2004-06-30", "length": 127, "genres": ["Action", "Fantasy"], "plot": ""},
+
+  {"title": "American Psycho", "director": {"name": "Mary", "surname": "Harron"}, "release_date": "2000-04-14", "length": 102, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "I Shot Andy Warhol", "director": {"name": "Mary", "surname": "Harron"}, "release_date": "1996-05-01", "length": 103, "genres": ["Biography", "Drama"], "plot": ""},
+  {"title": "The Notorious Bettie Page", "director": {"name": "Mary", "surname": "Harron"}, "release_date": "2005-09-11", "length": 91, "genres": ["Biography", "Drama"], "plot": ""},
+  {"title": "Charlie Says", "director": {"name": "Mary", "surname": "Harron"}, "release_date": "2018-09-02", "length": 110, "genres": ["Biography", "Drama"], "plot": ""},
+  {"title": "Dali Land", "director": {"name": "Mary", "surname": "Harron"}, "release_date": "2022-09-15", "length": 104, "genres": ["Biography", "Drama"], "plot": ""},
+
+  {"title": "Oldboy", "director": {"name": "Park", "surname": "Chan-woook"}, "release_date": "2003-11-21", "length": 120, "genres": ["Action", "Thriller"], "plot": ""},
+  {"title": "Lady Vengeance", "director": {"name": "Park", "surname": "Chan-woook"}, "release_date": "2005-07-29", "length": 112, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "Sympathy for Mr. Vengeance", "director": {"name": "Park", "surname": "Chan-woook"}, "release_date": "2002-03-29", "length": 129, "genres": ["Crime", "Drama"], "plot": ""},
+  {"title": "The Handmaiden", "director": {"name": "Park", "surname": "Chan-woook"}, "release_date": "2016-06-01", "length": 144, "genres": ["Drama", "Romance"], "plot": ""},
+  {"title": "Decision to Leave", "director": {"name": "Park", "surname": "Chan-woook"}, "release_date": "2022-06-29", "length": 138, "genres": ["Mystery", "Romance"], "plot": ""}
+]

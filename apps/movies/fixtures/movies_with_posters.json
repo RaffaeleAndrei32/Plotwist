@@ -1,0 +1,702 @@
+[
+  {
+    "title": "Pulp Fiction",
+    "director_id": 1,
+    "release_date": "1994-10-14",
+    "length": 154,
+    "genres": [32, 33],
+    "actors": [145, 146, 147],
+    "poster": "Pulp Fiction.jpg",
+    "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption."
+  },
+  {
+    "title": "Reservoir Dogs",
+    "director_id": 1,
+    "release_date": "1992-10-23",
+    "length": 99,
+    "genres": [32, 41],
+    "actors": [148, 149, 150],
+    "poster": "Reservoir Dogs.jpg",
+    "plot": "When a simple jewelry heist goes strangely wrong, the robbers find themselves hunted by cops and a mysterious traitor."
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "director_id": 1,
+    "release_date": "2003-10-10",
+    "length": 111,
+    "genres": [28, 32],
+    "actors": [147, 151],
+    "poster": "Kill Bill Vol 1.jpg",
+    "plot": "An assassin is left for dead on her wedding day. She awakens and seeks revenge on those who betrayed her."
+  },
+  {
+    "title": "Inglourious Basterds",
+    "director_id": 1,
+    "release_date": "2009-08-21",
+    "length": 153,
+    "genres": [29, 42],
+    "actors": [153, 154],
+    "poster": "Inglourious Basterds.jpg",
+    "plot": "In Nazi-occupied France, a group of American soldiers and a French-Jewish woman work together to stop a Nazi secret plan."
+  },
+  {
+    "title": "Django Unchained",
+    "director_id": 1,
+    "release_date": "2012-12-25",
+    "length": 165,
+    "genres": [33, 35],
+    "actors": [153, 162],
+    "poster": "Django Unchained.jpg",
+    "plot": "A freed slave partners with a bounty hunter to rescue his wife from a brutal plantation owner."
+  },
+  {
+    "title": "Goodfellas",
+    "director_id": 2,
+    "release_date": "1990-09-21",
+    "length": 146,
+    "genres": [32, 33],
+    "actors": [158, 159, 160],
+    "poster": "Goodfellas.jpg",
+    "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife and his mob partners."
+  },
+  {
+    "title": "Taxi Driver",
+    "director_id": 2,
+    "release_date": "1976-02-08",
+    "length": 114,
+    "genres": [32, 33],
+    "actors": [157, 161],
+    "poster": "Taxi Driver.jpg",
+    "plot": "A mentally unstable Vietnam War veteran works as a taxi driver in New York City, leading to a violent climax."
+  },
+  {
+    "title": "Raging Bull",
+    "director_id": 2,
+    "release_date": "1980-12-19",
+    "length": 129,
+    "genres": [30, 33],
+    "actors": [157, 158],
+    "poster": "Raging Bull.jpg",
+    "plot": "The life and career of boxer Jake LaMotta is recounted, focusing on his relationships and personal struggles."
+  },
+  {
+    "title": "The Departed",
+    "director_id": 2,
+    "release_date": "2006-10-06",
+    "length": 151,
+    "genres": [32, 41],
+    "actors": [162, 163, 164],
+    "poster": "The Departed.jpg",
+    "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in Boston."
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "director_id": 2,
+    "release_date": "2013-12-25",
+    "length": 180,
+    "genres": [30, 31],
+    "actors": [157, 165],
+    "poster": "The Wolf of Wall Street.jpg",
+    "plot": "A financial fraudster's rise and fall on Wall Street is recounted with excess, humor, and tragedy."
+  },
+  {
+    "title": "Blue Velvet",
+    "director_id": 3,
+    "release_date": "1986-09-19",
+    "length": 120,
+    "genres": [38, 41],
+    "actors": [166, 167],
+    "poster": "Blue Velvet.jpg",
+    "plot": "After finding a mysterious ear, a college student uncovers a web of secrets in his small hometown."
+  },
+  {
+    "title": "Mulholland Drive",
+    "director_id": 3,
+    "release_date": "2001-10-12",
+    "length": 147,
+    "genres": [38, 33],
+    "actors": [168, 169],
+    "poster": "Mulholland Drive.jpg",
+    "plot": "A woman loses her memory after a car accident and connects with an aspiring actress, leading to a twisted reality."
+  },
+  {
+    "title": "Twin Peaks: Fire Walk with Me",
+    "director_id": 3,
+    "release_date": "1992-08-28",
+    "length": 135,
+    "genres": [38, 37],
+    "actors": [170, 171],
+    "poster": "Twin Peaks Fire Walk with Me.jpg",
+    "plot": "The final days of Laura Palmer in the supernatural mystery of Twin Peaks are explored."
+  },
+  {
+    "title": "Lost Highway",
+    "director_id": 3,
+    "release_date": "1997-02-21",
+    "length": 134,
+    "genres": [38, 41],
+    "actors": [172, 173],
+    "poster": "Lost Highway.jpg",
+    "plot": "A man is implicated in his wife's murder and mysteriously transforms into another person."
+  },
+  {
+    "title": "The Elephant Man",
+    "director_id": 3,
+    "release_date": "1980-10-10",
+    "length": 124,
+    "genres": [30, 33],
+    "actors": [174, 175],
+    "poster": "The Elephant Man.jpg",
+    "plot": "A Victorian doctor helps a severely deformed man find dignity and acceptance in 19th-century London."
+  },
+  {
+    "title": "The Dark Knight",
+    "director_id": 4,
+    "release_date": "2008-07-18",
+    "length": 152,
+    "genres": [28, 32],
+    "actors": [176, 177, 178],
+    "poster": "The Dark Knight.jpg",
+    "plot": "When a menacing criminal terrorizes Gotham, Batman must confront his own limits to stop the chaos."
+  },
+  {
+    "title": "Inception",
+    "director_id": 4,
+    "release_date": "2010-07-16",
+    "length": 148,
+    "genres": [28, 40],
+    "actors": [162, 179, 180],
+    "poster": "Inception.jpg",
+    "plot": "A thief who steals corporate secrets through dream-sharing technology is given a chance at redemption through an impossible task."
+  },
+  {
+    "title": "Interstellar",
+    "director_id": 4,
+    "release_date": "2014-11-07",
+    "length": 169,
+    "genres": [29, 40],
+    "actors": [181, 182, 183],
+    "poster": "Interstellar.jpg",
+    "plot": "A team of astronauts travel through a wormhole in space to find a habitable planet and ensure humanity's survival."
+  },
+  {
+    "title": "Memento",
+    "director_id": 4,
+    "release_date": "2000-10-11",
+    "length": 113,
+    "genres": [38, 41],
+    "actors": [184, 185],
+    "poster": "Memento.jpg",
+    "plot": "A man with short-term memory loss uses tattoos and polaroids to track down the killer of his wife."
+  },
+  {
+    "title": "Dunkirk",
+    "director_id": 4,
+    "release_date": "2017-07-21",
+    "length": 106,
+    "genres": [42, 41],
+    "actors": [186, 187, 188],
+    "poster": "Dunkirk.jpg",
+    "plot": "Allied soldiers from Belgium, the British Empire, and France are trapped on the beaches of Dunkirk during WWII."
+  },
+  {
+    "title": "Jaws",
+    "director_id": 5,
+    "release_date": "1975-06-20",
+    "length": 124,
+    "genres": [41, 29],
+    "actors": [189, 190, 191],
+    "poster": "Jaws.jpg",
+    "plot": "A police chief, a marine scientist, and a grizzled shark hunter team up to tackle a giant shark threatening a beach town."
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "director_id": 5,
+    "release_date": "1981-06-12",
+    "length": 115,
+    "genres": [28, 29],
+    "actors": [192, 193, 194],
+    "poster": "Raiders of the Lost Ark.jpg",
+    "plot": "An adventuring archaeologist seeks the Ark of the Covenant before the Nazis do."
+  },
+  {
+    "title": "Schindler's List",
+    "director_id": 5,
+    "release_date": "1993-12-15",
+    "length": 195,
+    "genres": [30, 33],
+    "actors": [195, 196],
+    "poster": "Schindlers List.jpg",
+    "plot": "Oskar Schindler shelters his Jewish workers during the Holocaust, saving their lives."
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "director_id": 5,
+    "release_date": "1982-06-11",
+    "length": 115,
+    "genres": [34, 40],
+    "actors": [197],
+    "poster": "ET the ExtraTerrestrial.jpg",
+    "plot": "A boy befriends an extraterrestrial who has landed on Earth and helps him return home."
+  },
+  {
+    "title": "Jurassic Park",
+    "director_id": 5,
+    "release_date": "1993-06-11",
+    "length": 127,
+    "genres": [29, 40],
+    "actors": [192, 198, 199],
+    "poster": "Jurassic Park.jpg",
+    "plot": "A paleontologist, a mathematician, and a botanist are tasked with surveying a theme park of dinosaurs."
+  },
+  {
+    "title": "The Terminator",
+    "director_id": 6,
+    "release_date": "1984-10-26",
+    "length": 107,
+    "genres": [28, 40],
+    "actors": [200, 201],
+    "poster": "The Terminator.jpg",
+    "plot": "A cyborg assassin travels back in time to kill the mother of humanity's future savior."
+  },
+  {
+    "title": "Aliens",
+    "director_id": 6,
+    "release_date": "1986-07-18",
+    "length": 137,
+    "genres": [28, 40],
+    "actors": [200, 202],
+    "poster": "Aliens.jpg",
+    "plot": "A Marine unit is sent to investigate the silence of a colony on a xenomorph-infested planet."
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "director_id": 6,
+    "release_date": "1991-07-03",
+    "length": 137,
+    "genres": [28, 40],
+    "actors": [200, 203],
+    "poster": "Terminator 2 Judgment Day.jpg",
+    "plot": "A liquid metal cyborg is sent back in time to kill the young leader of humanity's future, but an older terminator protects him."
+  },
+  {
+    "title": "Titanic",
+    "director_id": 6,
+    "release_date": "1997-12-19",
+    "length": 195,
+    "genres": [33, 39],
+    "actors": [157, 204],
+    "poster": "Titanic.jpg",
+    "plot": "A poor artist falls in love with a rich woman on the maiden voyage of the Titanic."
+  },
+  {
+    "title": "Avatar",
+    "director_id": 6,
+    "release_date": "2009-12-18",
+    "length": 162,
+    "genres": [28, 40],
+    "actors": [205, 206],
+    "poster": "Avatar.jpg",
+    "plot": "A paraplegic Marine infiltrates a humanoid alien society, falling in love with one of them."
+  },
+  {
+    "title": "Seven",
+    "director_id": 7,
+    "release_date": "1995-09-22",
+    "length": 127,
+    "genres": [32, 41],
+    "actors": [153, 207],
+    "poster": "Seven.jpg",
+    "plot": "Two detectives hunt a serial killer who murders people according to the seven deadly sins."
+  },
+  {
+    "title": "Fight Club",
+    "director_id": 7,
+    "release_date": "1999-10-15",
+    "length": 139,
+    "genres": [33, 41],
+    "actors": [153, 208],
+    "poster": "Fight Club.jpg",
+    "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club."
+  },
+  {
+    "title": "Zodiac",
+    "director_id": 7,
+    "release_date": "2007-03-02",
+    "length": 157,
+    "genres": [32, 38],
+    "actors": [162, 209],
+    "poster": "Zodiac.jpg",
+    "plot": "Detectives hunt a serial killer dubbed 'The Zodiac' in 1970s San Francisco."
+  },
+  {
+    "title": "The Social Network",
+    "director_id": 7,
+    "release_date": "2010-10-01",
+    "length": 120,
+    "genres": [30, 33],
+    "actors": [210, 211, 212],
+    "poster": "The Social Network.jpg",
+    "plot": "A computer programmer creates the social networking site that becomes known as Facebook."
+  },
+  {
+    "title": "Gone Girl",
+    "director_id": 7,
+    "release_date": "2014-10-03",
+    "length": 149,
+    "genres": [33, 38],
+    "actors": [213, 214],
+    "poster": "Gone Girl.jpg",
+    "plot": "A wife disappears on her wedding anniversary, and her husband becomes the prime suspect."
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "director_id": 8,
+    "release_date": "2001-12-19",
+    "length": 178,
+    "genres": [29, 35],
+    "actors": [215, 216, 217],
+    "poster": "The Lord of the Rings The Fellowship of the Ring.jpg",
+    "plot": "A hobbit must destroy a ring to prevent it from falling into the hands of an evil lord."
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "director_id": 8,
+    "release_date": "2002-12-18",
+    "length": 179,
+    "genres": [29, 35],
+    "actors": [215, 216, 217],
+    "poster": "The Lord of the Rings The Two Towers.jpg",
+    "plot": "The hobbits continue their journey to destroy the ring as the war against Mordor escalates."
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "director_id": 8,
+    "release_date": "2003-12-17",
+    "length": 201,
+    "genres": [29, 35],
+    "actors": [215, 216, 217],
+    "poster": "The Lord of the Rings The Return of the King.jpg",
+    "plot": "The hobbits face their final journey to Mount Doom to destroy the ring and save Middle-earth."
+  },
+  {
+    "title": "King Kong",
+    "director_id": 8,
+    "release_date": "2005-12-14",
+    "length": 187,
+    "genres": [29, 33],
+    "actors": [218, 219],
+    "poster": "King Kong.jpg",
+    "plot": "An expedition to a mysterious island discovers a giant ape and brings chaos to New York City."
+  },
+  {
+    "title": "The Hobbit: An Unexpected Journey",
+    "director_id": 8,
+    "release_date": "2012-12-14",
+    "length": 169,
+    "genres": [29, 35],
+    "actors": [216, 220],
+    "poster": "The Hobbit An Unexpected Journey.jpg",
+    "plot": "A hobbit embarks on a quest with a group of dwarves to reclaim their treasure from a dragon."
+  },
+  {
+    "title": "Psycho",
+    "director_id": 9,
+    "release_date": "1960-09-08",
+    "length": 109,
+    "genres": [37, 41],
+    "actors": [221, 222],
+    "poster": "Psycho.jpg",
+    "plot": "A woman on the run checks into a mysterious motel run by a disturbed man and his mother."
+  },
+  {
+    "title": "Rear Window",
+    "director_id": 9,
+    "release_date": "1954-09-01",
+    "length": 112,
+    "genres": [38, 41],
+    "actors": [223, 224],
+    "poster": "Rear Window.jpg",
+    "plot": "A photographer confined to a wheelchair observes his neighbors and becomes convinced of a murder."
+  },
+  {
+    "title": "Vertigo",
+    "director_id": 9,
+    "release_date": "1958-05-09",
+    "length": 128,
+    "genres": [38, 39],
+    "actors": [223, 225],
+    "poster": "Vertigo.jpg",
+    "plot": "A detective with a fear of heights becomes obsessed with a woman he is hired to follow."
+  },
+  {
+    "title": "North by Northwest",
+    "director_id": 9,
+    "release_date": "1959-07-01",
+    "length": 136,
+    "genres": [29, 41],
+    "actors": [226, 227],
+    "poster": "North by Northwest.jpg",
+    "plot": "An ordinary man is mistaken for a spy and becomes entangled in a dangerous international plot."
+  },
+  {
+    "title": "The Birds",
+    "director_id": 9,
+    "release_date": "1963-03-28",
+    "length": 119,
+    "genres": [37, 41],
+    "actors": [227, 228],
+    "poster": "The Birds.jpg",
+    "plot": "A woman returns to her hometown and mysteriously, birds begin attacking people in increasing numbers."
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "director_id": 11,
+    "release_date": "1968-04-03",
+    "length": 149,
+    "genres": [29, 40],
+    "actors": [],
+    "poster": "2001 A Space Odyssey.jpg",
+    "plot": "An exploration of space travel and artificial intelligence through an epic interstellar journey."
+  },
+  {
+    "title": "A Clockwork Orange",
+    "director_id": 11,
+    "release_date": "1971-12-19",
+    "length": 136,
+    "genres": [32, 33],
+    "actors": [229, 230],
+    "poster": "A Clockwork Orange.jpg",
+    "plot": "A violent young man undergoes an experimental procedure to correct his behavior."
+  },
+  {
+    "title": "The Shining",
+    "director_id": 11,
+    "release_date": "1980-05-23",
+    "length": 146,
+    "genres": [37, 33],
+    "actors": [231, 232],
+    "poster": "The Shining.jpg",
+    "plot": "A family isolated in a hotel during winter descends into madness as supernatural forces take hold."
+  },
+  {
+    "title": "Full Metal Jacket",
+    "director_id": 11,
+    "release_date": "1987-06-26",
+    "length": 116,
+    "genres": [42, 33],
+    "actors": [233, 234, 235],
+    "poster": "Full Metal Jacket.jpg",
+    "plot": "A Marine unit faces the realities of the Vietnam War after intense bootcamp training."
+  },
+  {
+    "title": "Dr. Strangelove",
+    "director_id": 11,
+    "release_date": "1964-01-29",
+    "length": 95,
+    "genres": [31, 42],
+    "actors": [236, 237, 238],
+    "poster": "Dr Strangelove.jpg",
+    "plot": "When a deranged general orders a nuclear attack, officials must prevent nuclear war."
+  },
+  {
+    "title": "La Dolce Vita",
+    "director_id": 12,
+    "release_date": "1960-02-05",
+    "length": 174,
+    "genres": [33],
+    "actors": [239, 240, 241],
+    "poster": "La Dolce Vita.jpg",
+    "plot": "An unflinching look at the lives and morals of Rome's high society and celebrities."
+  },
+  {
+    "title": "8½",
+    "director_id": 12,
+    "release_date": "1963-06-25",
+    "length": 138,
+    "genres": [33],
+    "actors": [239, 242],
+    "poster": "8½.jpg",
+    "plot": "A film director struggles with creative block and his personal life during the making of his new film."
+  },
+  {
+    "title": "Amarcord",
+    "director_id": 12,
+    "release_date": "1973-12-13",
+    "length": 123,
+    "genres": [31, 33],
+    "actors": [243, 244],
+    "poster": "Amarcord.jpg",
+    "plot": "A nostalgic portrayal of Italian life in the 1930s through the memories of a young man."
+  },
+  {
+    "title": "La Strada",
+    "director_id": 12,
+    "release_date": "1954-09-23",
+    "length": 108,
+    "genres": [33],
+    "actors": [245, 246],
+    "poster": "La Strada.jpg",
+    "plot": "A circus performer and a vagrant form a complex relationship traveling through Italian villages."
+  },
+  {
+    "title": "Nights of Cabiria",
+    "director_id": 12,
+    "release_date": "1957-02-16",
+    "length": 110,
+    "genres": [33],
+    "actors": [245, 247],
+    "poster": "Nights of Cabiria.jpg",
+    "plot": "A prostitute experiences the ups and downs of urban life and love in Rome."
+  },
+  {
+    "title": "The Evil Dead",
+    "director_id": 13,
+    "release_date": "1981-10-15",
+    "length": 85,
+    "genres": [37],
+    "actors": [248, 249],
+    "poster": "The Evil Dead.jpg",
+    "plot": "Five college students fight for survival against evil spirits in a remote cabin."
+  },
+  {
+    "title": "Evil Dead II",
+    "director_id": 13,
+    "release_date": "1987-03-13",
+    "length": 84,
+    "genres": [37, 31],
+    "actors": [248, 250],
+    "poster": "Evil Dead II.jpg",
+    "plot": "A man battles evil forces and his possessed girlfriend in a cabin in the woods."
+  },
+  {
+    "title": "Army of Darkness",
+    "director_id": 13,
+    "release_date": "1992-10-09",
+    "length": 96,
+    "genres": [31, 35],
+    "actors": [248, 251],
+    "poster": "Army of Darkness.jpg",
+    "plot": "A man travels back to medieval times to battle an army of undead creatures."
+  },
+  {
+    "title": "Spider-Man",
+    "director_id": 13,
+    "release_date": "2002-05-03",
+    "length": 121,
+    "genres": [28, 35],
+    "actors": [252, 253, 254],
+    "poster": "SpiderMan.jpg",
+    "plot": "A young man gains spider powers and becomes a superhero fighting a villain with similar origins."
+  },
+  {
+    "title": "Spider-Man 2",
+    "director_id": 13,
+    "release_date": "2004-06-30",
+    "length": 127,
+    "genres": [28, 35],
+    "actors": [252, 255, 254],
+    "poster": "SpiderMan 2.jpg",
+    "plot": "Spider-Man faces a new villain while struggling with his personal life and love for Mary Jane."
+  },
+  {
+    "title": "American Psycho",
+    "director_id": 14,
+    "release_date": "2000-04-14",
+    "length": 102,
+    "genres": [32, 33],
+    "actors": [256, 257],
+    "poster": "American Psycho.jpg",
+    "plot": "A wealthy investment banker leads a double life as a serial killer in 1980s New York."
+  },
+  {
+    "title": "I Shot Andy Warhol",
+    "director_id": 14,
+    "release_date": "1996-05-01",
+    "length": 103,
+    "genres": [30, 33],
+    "actors": [258, 259],
+    "poster": "I Shot Andy Warhol.jpg",
+    "plot": "The life of Valerie Solanas, who became infamous for shooting Andy Warhol."
+  },
+  {
+    "title": "The Notorious Bettie Page",
+    "director_id": 14,
+    "release_date": "2005-09-11",
+    "length": 91,
+    "genres": [30, 33],
+    "actors": [260, 261],
+    "poster": "The Notorious Bettie Page.jpg",
+    "plot": "The life of the famous 1950s pin-up model Bettie Page is explored."
+  },
+  {
+    "title": "Charlie Says",
+    "director_id": 14,
+    "release_date": "2018-09-02",
+    "length": 110,
+    "genres": [30, 33],
+    "actors": [262, 263],
+    "poster": "Charlie Says.jpg",
+    "plot": "The lives of three women in Charles Manson's cult are explored."
+  },
+  {
+    "title": "Dali Land",
+    "director_id": 14,
+    "release_date": "2022-09-15",
+    "length": 104,
+    "genres": [30, 33],
+    "actors": [264],
+    "poster": "Dalíland.jpg",
+    "plot": "The life and art of surrealist Salvador Dalí are explored."
+  },
+  {
+    "title": "Oldboy",
+    "director_id": 15,
+    "release_date": "2003-11-21",
+    "length": 120,
+    "genres": [28, 41],
+    "actors": [265, 266],
+    "poster": "Oldboy.jpg",
+    "plot": "A man is imprisoned for 15 years and released to find his captor's identity."
+  },
+  {
+    "title": "Lady Vengeance",
+    "director_id": 15,
+    "release_date": "2005-07-29",
+    "length": 112,
+    "genres": [32, 33],
+    "actors": [267, 268],
+    "poster": "Lady Vengeance.jpg",
+    "plot": "A woman exacts revenge on the man who killed her daughter after serving time in prison."
+  },
+  {
+    "title": "Sympathy for Mr. Vengeance",
+    "director_id": 15,
+    "release_date": "2002-03-29",
+    "length": 129,
+    "genres": [32, 33],
+    "actors": [269, 270],
+    "poster": "Sympathy for Mr Vengeance.jpg",
+    "plot": "A deaf man seeks revenge on those responsible for his sister's death."
+  },
+  {
+    "title": "The Handmaiden",
+    "director_id": 15,
+    "release_date": "2016-06-01",
+    "length": 144,
+    "genres": [33, 39],
+    "actors": [271, 272],
+    "poster": "The Handmaiden.jpg",
+    "plot": "Two con artists plot to swindle a wealthy heiress through an elaborate scheme."
+  },
+  {
+    "title": "Decision to Leave",
+    "director_id": 15,
+    "release_date": "2022-06-29",
+    "length": 138,
+    "genres": [38, 39],
+    "actors": [273, 274],
+    "poster": "Decision to Leave.jpg",
+    "plot": "A detective investigating a murder suspects the victim's wife but becomes entranced by her."
+  }
+]

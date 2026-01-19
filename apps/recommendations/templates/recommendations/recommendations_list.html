@@ -1,0 +1,46 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block title %}Recommendations for You - Plotwist{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="mb-4">
+                <i class="bi bi-lightbulb me-2"></i>Recommended For You
+            </h1>
+
+            {% if recommendations %}
+                <div class="alert alert-info d-flex align-items-center mb-4">
+                    <i class="bi bi-info-circle me-2"></i>
+                    Based on your <strong class="mx-1">{{ liked_movies_count }}</strong> highly-rated movie{{ liked_movies_count|pluralize }}, 
+                    we found <strong class="mx-1">{{ paginator.count }}</strong> recommendation{{ paginator.count|pluralize }} for you.
+                </div>
+
+                <!-- Movies Grid -->
+                <div class="row mb-5">
+                    {% for movie in recommendations %}
+                        {% include 'movies/includes/_movie_card.html' with show_rating=True show_added_by=False %}
+                    {% endfor %}
+                </div>
+
+                <!-- Pagination -->
+                {% include 'includes/_pagination.html' %}
+            {% else %}
+                <div class="alert alert-secondary text-center py-5">
+                    <i class="bi bi-search fs-1"></i>
+                    {% if liked_movies_count == 0 %}
+                        <p class="mt-3">Rate movies with 7+ stars to get personalized recommendations!</p>
+                        <a href="{% url 'movies:list_movies' %}" class="btn btn-primary mt-3">
+                            <i class="bi bi-film me-2"></i>Browse Movies
+                        </a>
+                    {% else %}
+                        <p class="mt-3">No recommendations yet. Check back later!</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

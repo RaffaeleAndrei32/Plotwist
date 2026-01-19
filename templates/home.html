@@ -1,20 +1,22 @@
 {% extends 'navbar.html' %}
 
-{% block title %} Home {% endblock %}
+{% block title %} Home - Plotwist Dashboard {% endblock %}
 
 {% block content %}
 
-<div class="container my-4">    
+<div class="container my-4">
+    <!-- TOP RATED MOVIES SECTION -->
     <div class="mb-5"> 
         <div class="card mb-4 bg-light">
           <div class="card-header text-center">
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
               <h2 class="mb-0">
-                <i class="bi bi-star-fill text-warning me-2"></i>Top Rated Movies - 
+                <i class="bi bi-star-fill text-warning me-2"></i>Top Rated Movies
               </h2>
 
               <form method="get" class="d-flex align-items-center gap-2">
-                <select name="period" id="period" class="form-select" onchange="this.form.submit()">
+                <label for="period" class="fw-semibold mb-0 text-nowrap">Period:</label>
+                <select name="period" id="period" class="form-select form-select-sm" style="max-width: 150px;" onchange="this.form.submit()">
                   <option value="all" {% if period == 'all' %}selected{% endif %}>All time</option>
                   <option value="year" {% if period == 'year' %}selected{% endif %}>This year</option>
                   <option value="month" {% if period == 'month' %}selected{% endif %}>This month</option>
@@ -29,18 +31,59 @@
         {% if top_movies %}
             <div class="row">
                 {% for movie in top_movies %}
-                    {% include 'movies/includes/_movie_card.html'%}
+                    {% include 'movies/includes/_movie_card.html' with show_rating=True show_added_by=False %}
                 {% endfor %}
             </div>
-
-            {% include 'movies/includes/_pagination.html' %}
         {% else %}
             <div class="alert alert-warning text-center" role="alert">
-              
                 <i class="bi bi-info-circle me-2"></i>
                 No movies yet.
+            </div>
         {% endif %}
     </div>
+
+    <!-- PERSONALIZED RECOMMENDATIONS SECTION -->
+    {% if user.is_authenticated %}
+        <div class="mb-5">
+            <div class="card mb-4 bg-light">
+                <div class="card-header text-center">
+                    <h2 class="mb-0">
+                        <i class="bi bi-lightbulb text-info me-2"></i>Recommended For You
+                    </h2>
+                </div>
+                <div class="card-body">
+                </div>
+            </div>
+
+            {% if has_recommendations %}
+                <div class="alert alert-info d-flex align-items-center">
+                    <i class="bi bi-info-circle me-2"></i>
+                    Personalized based on your highly-rated movies.
+                </div>
+                
+                <div class="row">
+                    {% for movie in recommendations %}
+                        {% include 'movies/includes/_movie_card.html' with show_rating=True show_added_by=False %}
+                    {% endfor %}
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="{% url 'recommendations:recommendations_list' %}" class="btn btn-outline-info">
+                        <i class="bi bi-arrow-right me-2"></i>View All Recommendations
+                    </a>
+                </div>
+            {% else %}
+                <div class="alert alert-secondary text-center py-5">
+                    <i class="bi bi-search fs-1"></i>
+                    <p class="mt-3">Rate movies with 7+ stars to get personalized recommendations!</p>
+                    <a href="{% url 'movies:list_movies' %}" class="btn btn-primary mt-3">
+                        <i class="bi bi-film me-2"></i>Browse Movies
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+
 </div>
 
 {%  endblock %}
