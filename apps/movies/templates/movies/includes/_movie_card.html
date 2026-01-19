@@ -1,5 +1,10 @@
 <div class="col-md-6 col-lg-4 mb-4">
-    <div class="card h-100 shadow-sm">
+    <div class="card h-100 shadow-sm position-relative">
+        {% if rank %}
+            <span class="position-absolute top-0 start-0 badge bg-warning text-dark fs-5 m-2" style="z-index: 10;">
+                #{{ rank }}
+            </span>
+        {% endif %}
         <a href="{% url 'movies:movie_info' movie.pk %}" class="text-decoration-none text-dark">
             {% if movie.poster %}
                 <img src="{{ movie.poster.url }}" class="card-img-top" alt="{{ movie.title }}" style="height: 250px; object-fit: cover;">

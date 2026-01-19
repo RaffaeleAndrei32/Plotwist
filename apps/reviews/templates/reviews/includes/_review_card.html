@@ -1,3 +1,5 @@
+{% load reviews_extras %}
+
 <div class="card mb-4 shadow-sm">
     <div class="card-header bg-light d-flex justify-content-between align-items-start">
         <div class="flex-grow-1">
@@ -42,16 +44,38 @@
             by <span class="fw-bold">{{ review.user.username }}</span>
             
         </small>
+        <div class="d-flex align-items-center gap-2">
+            {% has_liked review user as user_liked %}
+            <form method="post" action="{% url 'reviews:toggle_like' review.pk %}" class="d-inline">
+                {% csrf_token %}
+                {% if user.is_authenticated %}
+                    {% if user_liked %}
+                        <button type="submit" class="btn btn-sm btn-warning">
+                            <i class="bi bi-hand-thumbs-up-fill me-1"></i> Unlike
+                        </button>
+                    {% else %}
+                        <button type="submit" class="btn btn-sm btn-outline-warning">
+                            <i class="bi bi-hand-thumbs-up me-1"></i> Like
+                        </button>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-sm btn-outline-warning">
+                        <i class="bi bi-hand-thumbs-up me-1"></i> Like
+                    </a>
+                {% endif %}
+            </form>
+            <span class="badge bg-light text-dark border">{{ review.likes_count }} like{{ review.likes_count|pluralize }}</span>
 
-        {% if user.is_authenticated and review.user == user %}
-            <div class="btn-group btn-group-sm" role="group">
-                <a href="{% url 'reviews:edit_review' review.pk %}" class="btn btn-warning">
-                    <i class="bi bi-pencil"></i>
-                </a>
-                <a href="{% url 'reviews:delete_review' review.pk %}" class="btn btn-danger">
-                    <i class="bi bi-trash"></i>
-                </a>
-            </div>
-        {% endif %}
+            {% if user.is_authenticated and review.user == user %}
+                <div class="btn-group btn-group-sm" role="group">
+                    <a href="{% url 'reviews:edit_review' review.pk %}" class="btn btn-warning">
+                        <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="{% url 'reviews:delete_review' review.pk %}" class="btn btn-danger">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
     </div>
 </div>

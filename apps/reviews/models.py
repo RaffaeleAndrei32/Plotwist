@@ -43,3 +43,23 @@ class Review(models.Model):
     
     def __str__(self):
         return f"{self.user.username} - {self.movie.title} ({self.rating}/10)"
+
+    @property
+    def likes_count(self) -> int:
+        return self.likes.count()
+
+
+class ReviewLike(models.Model):
+    """Tracks which users liked which reviews."""
+
+    review = models.ForeignKey(Review, on_delete=models.CASCADE, related_name='likes')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='review_likes')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'reviews'
+        unique_together = ['review', 'user']
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.user.username} liked review {self.review_id}"
