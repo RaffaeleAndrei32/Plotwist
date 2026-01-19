@@ -16,7 +16,7 @@ CustomUser = get_user_model()
 
 directors_imported_count = 0
 
-API_KEY = "2674f1f57c98c47e6bef9d9db85577dc"
+API_KEY = "your_tmdb_api_key_here"
 SAVE_FOLDER = os.path.join("media", "movies", "posters")
 FIXTURES_DIR = os.path.join("apps", "movies", "fixtures")
 LANGUAGE = "en-US"

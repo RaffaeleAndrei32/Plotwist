@@ -31,7 +31,7 @@
         {% if top_movies %}
             <div class="row">
                 {% for movie in top_movies %}
-                    {% include 'movies/includes/_movie_card.html' with show_rating=True show_added_by=False %}
+                    {% include 'movies/includes/_movie_card.html' %}
                 {% endfor %}
             </div>
         {% else %}
@@ -48,7 +48,7 @@
             <div class="card mb-4 bg-light">
                 <div class="card-header text-center">
                     <h2 class="mb-0">
-                        <i class="bi bi-lightbulb text-info me-2"></i>Recommended For You
+                        <i class="bi bi-lightbulb text-warning me-2"></i>Recommended For You
                     </h2>
                 </div>
                 <div class="card-body">
@@ -63,12 +63,12 @@
                 
                 <div class="row">
                     {% for movie in recommendations %}
-                        {% include 'movies/includes/_movie_card.html' with show_rating=True show_added_by=False %}
+                        {% include 'movies/includes/_movie_card.html' %}
                     {% endfor %}
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="{% url 'recommendations:recommendations_list' %}" class="btn btn-outline-info">
+                    <a href="{% url 'recommendations:recommendations_list' %}" class="btn btn-outline-warning fw-bold">
                         <i class="bi bi-arrow-right me-2"></i>View All Recommendations
                     </a>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="alert alert-secondary text-center py-5">
                     <i class="bi bi-search fs-1"></i>
                     <p class="mt-3">Rate movies with 7+ stars to get personalized recommendations!</p>
-                    <a href="{% url 'movies:list_movies' %}" class="btn btn-primary mt-3">
+                    <a href="{% url 'movies:list_movies' %}" class="btn btn-warning mt-3 fw-bold">
                         <i class="bi bi-film me-2"></i>Browse Movies
                     </a>
                 </div>
