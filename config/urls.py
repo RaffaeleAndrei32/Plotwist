@@ -3,12 +3,12 @@ from django.urls import path, re_path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from config.views import home
+from config.views import HomeView
 
 
 
 urlpatterns = [
-    re_path(r"^$|^\/$|^home\/$",home,name="home"),
+    re_path(r"^$|^\/$|^home\/$", HomeView.as_view(), name="home"),
 
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),

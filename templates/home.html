@@ -7,11 +7,20 @@
 <div class="container my-4">    
     <div class="mb-5"> 
         <div class="card mb-4 bg-light">
-          <div class="card-header">
-            <h2 class="mb-4">
-              <i class="bi bi-star-fill text-warning me-2"></i>
-              Top Rated Movies of All Time
-            </h2>
+          <div class="card-header text-center">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+              <h2 class="mb-0">
+                <i class="bi bi-star-fill text-warning me-2"></i>Top Rated Movies - 
+              </h2>
+
+              <form method="get" class="d-flex align-items-center gap-2">
+                <select name="period" id="period" class="form-select" onchange="this.form.submit()">
+                  <option value="all" {% if period == 'all' %}selected{% endif %}>All time</option>
+                  <option value="year" {% if period == 'year' %}selected{% endif %}>This year</option>
+                  <option value="month" {% if period == 'month' %}selected{% endif %}>This month</option>
+                </select>
+              </form>
+            </div>
           </div>
           <div class="card-body">
           </div>
