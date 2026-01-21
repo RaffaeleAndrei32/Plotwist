@@ -18,6 +18,7 @@ class MovieListView(FilterView):
     filterset_class = MovieFilter
     context_object_name = 'movies'
     paginate_by = 9
+    ordering = ['-release_date']
 
 
 
@@ -66,7 +67,7 @@ class WatchlistView(LoginRequiredMixin, ListView):
     login_url = 'login'
     
     def get_queryset(self):
-        return self.request.user.watched_movies.all()
+        return self.request.user.watched_movies.all().order_by('-release_date')
 
 
 
@@ -111,7 +112,7 @@ class UserMoviesListView(LoginRequiredMixin, ListView):
     login_url = 'login'
     
     def get_queryset(self):
-        return Movie.objects.filter(logged_by=self.request.user).select_related('director', 'logged_by')
+        return Movie.objects.filter(logged_by=self.request.user).select_related('director', 'logged_by').order_by('-release_date')
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
