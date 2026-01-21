@@ -1,0 +1,54 @@
+{% extends 'navbar.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mb-4 bg-light">
+                <div class="card-header">
+                    <h2 class="mb-0">Edit Profile</h2>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <div class="card-body">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        
+                        {% if user.profile_picture %}
+                            <div class="mb-3">
+                                <label class="form-label">Current Profile Picture:</label>
+                                <div>
+                                    <img src="{{ user.profile_picture.url }}" alt="Profile" class="img-thumbnail" style="max-width: 200px;">
+                                </div>
+                            </div>
+                        {% endif %}
+                        
+                        <div class="d-flex gap-2 justify-content-center mt-4">
+                            <a href="{% url 'home' %}" class="btn btn-secondary fw-bold">
+                                <i class="bi bi-x-circle me-2"></i>Cancel
+                            </a>
+                            <button type="submit" class="btn btn-warning fw-bold">
+                                <i class="bi bi-save me-2"></i>Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

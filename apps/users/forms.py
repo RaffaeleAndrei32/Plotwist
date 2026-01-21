@@ -31,4 +31,18 @@ class ModeratorCreationForm(ExtendedUserCreationForm):
         group, created = Group.objects.get_or_create(name="Moderators")
         group.user_set.add(user) 
         return user 
-   
+
+
+class UserProfileForm(forms.ModelForm):
+    """Form for updating user profile information."""
+    
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name', 'profile_picture']
+        widgets = {
+            'username': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+            'first_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'profile_picture': forms.FileInput(attrs={'class': 'form-control'}),
+        }

@@ -35,14 +35,25 @@
     </div>
     
     <div class="card-footer bg-light d-flex justify-content-between align-items-center">
-        <small class="text-muted">
-            {% if review.created_at == review.updated_at %}
-                Posted on {{ review.created_at|date:"M d, Y" }}
+        <small class="text-muted d-flex align-items-center gap-2">
+            {% if review.user.profile_picture %}
+                <img src="{{ review.user.profile_picture.url }}" 
+                     alt="{{ review.user.username }}" 
+                     class="rounded-circle" 
+                     style="width: 32px; height: 32px; object-fit: cover; cursor: pointer;" 
+                     data-bs-toggle="modal" 
+                     data-bs-target="#profileModal{{ review.pk }}">
             {% else %}
-                Updated on {{ review.updated_at|date:"M d, Y" }}
+                <i class="bi bi-person-circle fs-4 text-secondary"></i>
             {% endif %}
-            by <span class="fw-bold">{{ review.user.username }}</span>
-            
+            <div>
+                {% if review.created_at == review.updated_at %}
+                    Posted on {{ review.created_at|date:"M d, Y" }}
+                {% else %}
+                    Updated on {{ review.updated_at|date:"M d, Y" }}
+                {% endif %}
+                by <span class="fw-bold">{{ review.user.username }}</span>
+            </div>
         </small>
         <div class="d-flex align-items-center gap-2">
             {% has_liked review user as user_liked %}
@@ -79,3 +90,19 @@
         </div>
     </div>
 </div>
+
+{% comment %} Modal for profile picture {% endcomment %}
+{% if review.user.profile_picture %}
+<div class="modal fade" id="profileModal{{ review.pk }}" tabindex="-1" aria-labelledby="profileModalLabel{{ review.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header bg-dark border-0">
+                <h5 class="modal-title w-100 text-center text-white" id="profileModalLabel{{ review.pk }}">{{ review.user.username }}</h5>
+            </div>
+            <div class="modal-body p-0">
+                <img src="{{ review.user.profile_picture.url }}" alt="{{ review.user.username }}" class="img-fluid w-100">
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

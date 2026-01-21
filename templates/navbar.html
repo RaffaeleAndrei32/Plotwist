@@ -58,6 +58,8 @@
                         <li><a href="{% url 'movies:user_movies' %}" class="dropdown-item"><i class="bi bi-camera-reels me-2"></i>My Movies</a></li>
                         <li><hr class="dropdown-divider"></li>
                         {% endif %}
+                        <li><a href="{% url 'users:profile_edit' %}" class="dropdown-item"><i class="bi bi-person-gear me-2"></i>Edit Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a href="{% url 'reviews:reviews_list' %}" class="dropdown-item"><i class="bi bi-pencil me-2"></i>My Reviews</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a href="{% url 'movies:watchlist' %}" class="dropdown-item"><i class="bi bi-bookmark me-2"></i>Watchlist</a></li>
@@ -92,9 +94,9 @@
                         Register
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a href="{% url 'register_user' %}" class="dropdown-item" href="#">as user</a></li>
+                        <li><a href="{% url 'users:register_user' %}" class="dropdown-item" href="#">as user</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a href="{% url 'register_moderator' %}" class="dropdown-item" href="#">as moderator</a></li>
+                        <li><a href="{% url 'users:register_moderator' %}" class="dropdown-item" href="#">as moderator</a></li>
                     </ul>
                 </div>
                 {% endif %}
