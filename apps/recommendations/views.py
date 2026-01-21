@@ -15,7 +15,7 @@ class RecommendationsListView(LoginRequiredMixin, ListView):
     template_name = 'recommendations/recommendations_list.html'
     context_object_name = 'recommendations'
     paginate_by = 9
-    login_url = 'accounts:login'
+    login_url = 'login'
 
     def get_queryset(self):
         user = self.request.user

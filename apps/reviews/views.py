@@ -74,7 +74,7 @@ class UserReviewsListView(LoginRequiredMixin, ListView):
     template_name = 'reviews/reviews_list.html'
     context_object_name = 'reviews'
     paginate_by = 9
-    login_url = 'accounts:login'
+    login_url = 'login'
     
     def get_queryset(self):
         return Review.objects.filter(user=self.request.user).select_related('movie', 'user').prefetch_related('likes')

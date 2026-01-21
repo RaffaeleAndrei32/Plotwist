@@ -93,7 +93,7 @@ class UserMoviesListView(LoginRequiredMixin, ListView):
     template_name = 'movies/user_movies_list.html'
     context_object_name = 'movies'
     paginate_by = 9
-    login_url = 'accounts:login'
+    login_url = 'login'
     
     def get_queryset(self):
         return Movie.objects.filter(logged_by=self.request.user).select_related('director', 'logged_by')
