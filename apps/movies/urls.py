@@ -15,4 +15,5 @@ urlpatterns = [
     path("my_movies/", UserMoviesListView.as_view(), name="user_movies"),
     path("<int:pk>/add_to_watchlist/", AddToWatchlistView.as_view(), name="add_to_watchlist"),
     path("<int:pk>/remove_from_watchlist/", RemoveFromWatchlistView.as_view(), name="remove_from_watchlist"),
+    path("<int:pk>/delete/", DeleteMovieView.as_view(), name="delete_movie"),
 ]

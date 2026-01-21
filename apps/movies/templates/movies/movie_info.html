@@ -146,6 +146,11 @@
                             <i class="bi bi-pencil me-2"></i>Write Review
                         </a>
                     {% endif %}
+                    {% if user_added_movie %}
+                        <a href="{% url 'movies:delete_movie' movie.pk %}" class="btn btn-danger fw-bold">
+                            <i class="bi bi-trash me-2"></i>Delete Movie
+                        </a>
+                    {% endif %}
                 {% endif %}
             </div>
 

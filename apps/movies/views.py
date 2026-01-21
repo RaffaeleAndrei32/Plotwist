@@ -1,5 +1,5 @@
 from multiprocessing import context
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import CreateView, ListView, DetailView, DeleteView
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.shortcuts import redirect, get_object_or_404
@@ -34,6 +34,8 @@ class MovieDetailView(DetailView):
             context['in_watchlist'] = self.object.watched_by.filter(id=self.request.user.id).exists()
             
             context['user_review'] = self.object.reviews.filter(user=self.request.user).first()
+            
+            context['user_added_movie'] = self.object.logged_by == self.request.user
         
         context['reviews'] = self.object.reviews.all()
         
@@ -86,6 +88,19 @@ class RemoveFromWatchlistView(LoginRequiredMixin, View):
         movie.watched_by.remove(request.user)
         return redirect('movies:watchlist')
 
+
+class DeleteMovieView(UserPassesTestMixin, DeleteView):
+    """Allow user who added the movie to delete it."""
+    model = Movie
+    template_name = 'movies/movie_confirm_delete.html'
+    pk_url_kwarg = 'pk'
+    
+    def test_func(self):
+        movie = self.get_object()
+        return movie.logged_by == self.request.user
+    
+    def get_success_url(self):
+        return reverse_lazy('movies:list_movies')
 
 
 class UserMoviesListView(LoginRequiredMixin, ListView):
