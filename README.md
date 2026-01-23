@@ -23,11 +23,11 @@ Visit `http://127.0.0.1:8000` to access the application.
 
 ## Features
 
-- 🎬 **Movie Catalog** - Add, edit, and manage movies with details (director, actors, genres, plot)
-- ⭐ **Reviews & Ratings** - Rate movies and write detailed reviews
-- 👥 **User System** - User authentication with profile customization
-- 🎯 **Recommendations** - Personalized movie recommendations (coming soon)
-- 📊 **Admin Dashboard** - Manage content with Django admin
+- **Movie Catalog** - Add, edit, and manage movies with details (director, actors, genres, plot)
+- **Reviews & Ratings** - Rate movies and write detailed reviews
+- **User System** - User authentication with profile customization
+- **Recommendations** - Personalized movie recommendations (coming soon)
+- **Admin Dashboard** - Manage content with Django admin
 
 ---
 

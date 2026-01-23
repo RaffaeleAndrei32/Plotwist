@@ -51,28 +51,7 @@ The application will be available at `http://127.0.0.1:8000`
 
 ---
 
-## Installation as a Python Package
-
-You can also install Plotwist directly as a Python package:
-
-```bash
-pip install git+https://github.com/yourusername/plotwist.git
-```
-
----
-
 ## Initial Configuration
-
-### Environment Variables (optional)
-
-Create a `.env` file in the project root:
-
-```
-DEBUG=True
-SECRET_KEY=your-secret-key-here
-ALLOWED_HOSTS=localhost,127.0.0.1
-DATABASE_URL=sqlite:///db.sqlite3
-```
 
 ### Configuration Files
 
@@ -110,12 +89,6 @@ python manage.py makemigrations
 
 # Apply migrations
 python manage.py migrate
-
-# Access the Django interactive shell
-python manage.py shell
-
-# Collect static files for production
-python manage.py collectstatic
 ```
 
 ---
@@ -142,22 +115,3 @@ Specify a different port:
 ```bash
 python manage.py runserver 8001
 ```
-
----
-
-## Production Deployment
-
-- Set `DEBUG=False` in `config/settings.py`
-- Generate a new secure `SECRET_KEY`
-- Configure `ALLOWED_HOSTS` with your domain
-- Use a database like PostgreSQL instead of SQLite
-- Configure a web server (Nginx, Apache) and WSGI (Gunicorn)
-- Use `python manage.py collectstatic` for static files
-
----
-
-## Support
-
-For issues, bugs, or feature requests, please open an issue on GitHub.
-
-Enjoy using Plotwist! 🎬
