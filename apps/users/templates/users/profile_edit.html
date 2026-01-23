@@ -32,7 +32,7 @@
                             <div class="mb-3">
                                 <label class="form-label">Current Profile Picture:</label>
                                 <div>
-                                    <img src="{{ user.profile_picture.url }}" alt="Profile" class="img-thumbnail" style="max-width: 200px;">
+                                    <img src="{{ user.profile_picture.url }}" alt="Profile" class="img-thumbnail" style="max-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#profilePicModal">
                                 </div>
                             </div>
                         {% endif %}
@@ -46,6 +46,22 @@
                             </button>
                         </div>
                     </form>
+
+                    {% if user.profile_picture %}
+                    <div class="modal fade" id="profilePicModal" tabindex="-1" aria-labelledby="profilePicModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header bg-dark border-0 justify-content-center">
+                                    <h5 class="modal-title text-white" id="profilePicModalLabel">{{ user.username }}</h5>
+                                    <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <img src="{{ user.profile_picture.url }}" alt="Profile" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

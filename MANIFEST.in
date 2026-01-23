@@ -1,0 +1,20 @@
+include README.md
+include LICENSE
+include requirements.txt
+include manage.py
+include plotwist.code-workspace
+
+recursive-include templates *.html
+recursive-include static *.css *.js *.png *.jpg *.jpeg *.gif *.svg *.woff *.woff2 *.ttf *.eot
+recursive-include apps/*/templates *.html
+recursive-include apps/*/static *
+recursive-include apps/*/fixtures *.json
+recursive-include config *
+recursive-include media *
+
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .DS_Store
+global-exclude *.egg-info
+global-exclude .git*
+global-exclude db.sqlite3

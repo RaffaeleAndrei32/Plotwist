@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plotwist"
+version = "0.1.0"
+description = "A web platform for movies logging, scoring and reviewing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Raffaele", email = "your-email@example.com"},
+]
+keywords = ["django", "movies", "reviews", "ratings"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Django :: 6.0",
+    "Environment :: Web Environment",
+    "Intended Audience :: End Users/Desktop",
+]
+dependencies = [
+    "Django==6.0",
+    "django-crispy-forms==2.5",
+    "crispy-bootstrap5==2025.6",
+    "django-filter==24.1",
+    "Pillow==12.1.0",
+    "requests==2.32.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/plotwist"
+Repository = "https://github.com/yourusername/plotwist.git"
+Issues = "https://github.com/yourusername/plotwist/issues"
+
+[tool.setuptools]
+packages = ["plotwist"]
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.css", "*.js", "*.json"]
+"apps.movies" = ["templates/**/*", "static/**/*", "fixtures/**/*"]
+"apps.reviews" = ["templates/**/*", "static/**/*"]
+"apps.recommendations" = ["templates/**/*", "static/**/*"]
+"apps.users" = ["templates/**/*", "static/**/*"]
