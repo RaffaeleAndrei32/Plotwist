@@ -7,7 +7,7 @@ Plotwist is a web platform for movies logging, scoring and reviewing.
 ### Installation from GitHub
 
 ```bash
-git clone https://github.com/yourusername/plotwist.git
+git clone https://github.com/RaffaeleAndrei32/Plotwist
 cd plotwist
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
