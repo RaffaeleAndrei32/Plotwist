@@ -18,7 +18,6 @@ setup(
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
@@ -28,7 +27,7 @@ setup(
         "Environment :: Web Environment",
         "Intended Audience :: End Users/Desktop",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.10",
     install_requires=requirements,
     entry_points={
         "console_scripts": [

@@ -7,7 +7,7 @@ name = "plotwist"
 version = "0.1.0"
 description = "A web platform for movies logging, scoring and reviewing"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
     {name = "Raffaele", email = "your-email@example.com"},
@@ -15,7 +15,6 @@ authors = [
 keywords = ["django", "movies", "reviews", "ratings"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
