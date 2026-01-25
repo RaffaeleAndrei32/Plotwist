@@ -218,3 +218,7 @@ __marimo__/
 
 # Copilot instructions
 .github/copilot-instructions.md
+
+# Plotwist documentation build output
+documentation/
+!documentation/plotwist_documentation.pdf
