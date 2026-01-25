@@ -220,5 +220,13 @@ __marimo__/
 .github/copilot-instructions.md
 
 # Plotwist documentation build output
-documentation/
+documentation/*.log
+documentation/*.aux
+documentation/*.fls
+documentation/*.fdb_latexmk
+documentation/*.out
+documentation/*.synctex.gz
+documentation/*.toc
 !documentation/plotwist_documentation.pdf
+!documentation/images/
+!documentation/titlepage.tex
