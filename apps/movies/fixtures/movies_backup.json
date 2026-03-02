@@ -1,0 +1,3577 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "Moderators",
+    "permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kbt8ojl0q77loifjh6hxuerv956pa2q3",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-s6akzxmsXX9wANlSnFSIu0OkFNC-mXkvFnBba9hGXsKc2IUZdvrdCOMjtx2kO7Zb57G3dZmJ7wo_6OBTT_l5Pdy_g4qjfmtS6LICsFqARCuMliAA0Ghw5KRM2ZwdWa-KjzoWXzAKr0RCKQuBF-z9AbbdNxE:1vxBqi:dn7Q7qTM-fiJwyppdhjRckw8eYA674g8coXxg-PbWWg",
+    "expire_date": "2026-03-16T22:34:48.520Z"
+  }
+},
+{
+  "model": "users.customuser",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$pGEJTPJV7Vs4qcBGJwUMyw$2MbgCZspXHhbmJWKyB2g5Umr7p/Pn/23m8EjiG6TrJ0=",
+    "last_login": "2026-03-02T22:34:48.517Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-06T22:47:36.634Z",
+    "email": "admin@gmail.com",
+    "profile_picture": "",
+    "groups": [
+      [
+        "Moderators"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 28,
+  "fields": {
+    "name": "Action"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 29,
+  "fields": {
+    "name": "Adventure"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 30,
+  "fields": {
+    "name": "Biography"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 31,
+  "fields": {
+    "name": "Comedy"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 32,
+  "fields": {
+    "name": "Crime"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 33,
+  "fields": {
+    "name": "Drama"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 34,
+  "fields": {
+    "name": "Family"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 35,
+  "fields": {
+    "name": "Fantasy"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 36,
+  "fields": {
+    "name": "History"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 37,
+  "fields": {
+    "name": "Horror"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 38,
+  "fields": {
+    "name": "Mystery"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 39,
+  "fields": {
+    "name": "Romance"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 40,
+  "fields": {
+    "name": "Sci-Fi"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 41,
+  "fields": {
+    "name": "Thriller"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 42,
+  "fields": {
+    "name": "War"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 145,
+  "fields": {
+    "name": "John",
+    "surname": "Travolta",
+    "birth_date": "1954-02-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 146,
+  "fields": {
+    "name": "Samuel L.",
+    "surname": "Jackson",
+    "birth_date": "1948-12-21"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 147,
+  "fields": {
+    "name": "Uma",
+    "surname": "Thurman",
+    "birth_date": "1970-04-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 148,
+  "fields": {
+    "name": "Harvey",
+    "surname": "Keitel",
+    "birth_date": "1939-05-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 149,
+  "fields": {
+    "name": "Tim",
+    "surname": "Roth",
+    "birth_date": "1961-05-14"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 150,
+  "fields": {
+    "name": "Michael",
+    "surname": "Madsen",
+    "birth_date": "1957-09-25"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 151,
+  "fields": {
+    "name": "Lucy",
+    "surname": "Liu",
+    "birth_date": "1968-12-02"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 152,
+  "fields": {
+    "name": "Vivica A.",
+    "surname": "Fox",
+    "birth_date": "1964-07-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 153,
+  "fields": {
+    "name": "Brad",
+    "surname": "Pitt",
+    "birth_date": "1963-12-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 154,
+  "fields": {
+    "name": "Christoph",
+    "surname": "Waltz",
+    "birth_date": "1956-10-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 155,
+  "fields": {
+    "name": "Mélanie",
+    "surname": "Laurent",
+    "birth_date": "1983-02-21"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 156,
+  "fields": {
+    "name": "Jamie",
+    "surname": "Foxx",
+    "birth_date": "1967-12-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 157,
+  "fields": {
+    "name": "Leonardo",
+    "surname": "DiCaprio",
+    "birth_date": "1974-11-11"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 158,
+  "fields": {
+    "name": "Robert",
+    "surname": "De Niro",
+    "birth_date": "1943-08-17"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 159,
+  "fields": {
+    "name": "Ray",
+    "surname": "Liotta",
+    "birth_date": "1954-12-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 160,
+  "fields": {
+    "name": "Joe",
+    "surname": "Pesci",
+    "birth_date": "1943-02-09"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 161,
+  "fields": {
+    "name": "Jodie",
+    "surname": "Foster",
+    "birth_date": "1962-11-19"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 162,
+  "fields": {
+    "name": "Cybill",
+    "surname": "Shepherd",
+    "birth_date": "1950-02-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 163,
+  "fields": {
+    "name": "Cathy",
+    "surname": "Moriarty",
+    "birth_date": "1960-11-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 164,
+  "fields": {
+    "name": "Matt",
+    "surname": "Damon",
+    "birth_date": "1970-10-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 165,
+  "fields": {
+    "name": "Jack",
+    "surname": "Nicholson",
+    "birth_date": "1937-04-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 166,
+  "fields": {
+    "name": "Jonah",
+    "surname": "Hill",
+    "birth_date": "1983-12-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 167,
+  "fields": {
+    "name": "Margot",
+    "surname": "Robbie",
+    "birth_date": "1990-07-02"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 168,
+  "fields": {
+    "name": "Kyle",
+    "surname": "MacLachlan",
+    "birth_date": "1959-02-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 169,
+  "fields": {
+    "name": "Isabella",
+    "surname": "Rossellini",
+    "birth_date": "1952-06-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 170,
+  "fields": {
+    "name": "Dennis",
+    "surname": "Hopper",
+    "birth_date": "1936-05-17"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 171,
+  "fields": {
+    "name": "Naomi",
+    "surname": "Watts",
+    "birth_date": "1968-09-28"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 172,
+  "fields": {
+    "name": "Laura",
+    "surname": "Harring",
+    "birth_date": "1964-03-03"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 173,
+  "fields": {
+    "name": "Justin",
+    "surname": "Theroux",
+    "birth_date": "1971-08-10"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 174,
+  "fields": {
+    "name": "Sheryl",
+    "surname": "Lee",
+    "birth_date": "1967-04-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 175,
+  "fields": {
+    "name": "Ray",
+    "surname": "Wise",
+    "birth_date": "1947-08-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 176,
+  "fields": {
+    "name": "Bill",
+    "surname": "Pullman",
+    "birth_date": "1953-12-17"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 177,
+  "fields": {
+    "name": "Patricia",
+    "surname": "Arquette",
+    "birth_date": "1968-04-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 178,
+  "fields": {
+    "name": "Balthazar",
+    "surname": "Getty",
+    "birth_date": "1975-01-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 179,
+  "fields": {
+    "name": "Anthony",
+    "surname": "Hopkins",
+    "birth_date": "1937-12-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 180,
+  "fields": {
+    "name": "John",
+    "surname": "Hurt",
+    "birth_date": "1940-01-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 181,
+  "fields": {
+    "name": "Anne",
+    "surname": "Bancroft",
+    "birth_date": "1931-09-17"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 182,
+  "fields": {
+    "name": "Christian",
+    "surname": "Bale",
+    "birth_date": "1974-01-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 183,
+  "fields": {
+    "name": "Heath",
+    "surname": "Ledger",
+    "birth_date": "1979-04-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 184,
+  "fields": {
+    "name": "Aaron",
+    "surname": "Eckhart",
+    "birth_date": "1968-03-12"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 185,
+  "fields": {
+    "name": "Joseph",
+    "surname": "Gordon-Levitt",
+    "birth_date": "1981-02-17"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 186,
+  "fields": {
+    "name": "Elliot",
+    "surname": "Page",
+    "birth_date": "1987-02-21"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 187,
+  "fields": {
+    "name": "Matthew",
+    "surname": "McConaughey",
+    "birth_date": "1969-11-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 188,
+  "fields": {
+    "name": "Anne",
+    "surname": "Hathaway",
+    "birth_date": "1982-11-12"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 189,
+  "fields": {
+    "name": "Jessica",
+    "surname": "Chastain",
+    "birth_date": "1977-03-24"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 190,
+  "fields": {
+    "name": "Guy",
+    "surname": "Pearce",
+    "birth_date": "1967-10-05"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 191,
+  "fields": {
+    "name": "Carrie-Anne",
+    "surname": "Moss",
+    "birth_date": "1967-08-21"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 192,
+  "fields": {
+    "name": "Joe",
+    "surname": "Pantoliano",
+    "birth_date": "1951-09-12"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 193,
+  "fields": {
+    "name": "Fionn",
+    "surname": "Whitehead",
+    "birth_date": "1997-07-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 194,
+  "fields": {
+    "name": "Tom",
+    "surname": "Hardy",
+    "birth_date": "1977-09-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 195,
+  "fields": {
+    "name": "Cillian",
+    "surname": "Murphy",
+    "birth_date": "1976-05-25"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 196,
+  "fields": {
+    "name": "Roy",
+    "surname": "Scheider",
+    "birth_date": "1932-11-10"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 197,
+  "fields": {
+    "name": "Robert",
+    "surname": "Shaw",
+    "birth_date": "1927-08-09"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 198,
+  "fields": {
+    "name": "Richard",
+    "surname": "Dreyfuss",
+    "birth_date": "1947-10-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 199,
+  "fields": {
+    "name": "Harrison",
+    "surname": "Ford",
+    "birth_date": "1942-07-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 200,
+  "fields": {
+    "name": "Karen",
+    "surname": "Allen",
+    "birth_date": "1951-10-05"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 201,
+  "fields": {
+    "name": "Paul",
+    "surname": "Freeman",
+    "birth_date": "1943-01-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 202,
+  "fields": {
+    "name": "Liam",
+    "surname": "Neeson",
+    "birth_date": "1952-06-07"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 203,
+  "fields": {
+    "name": "Ben",
+    "surname": "Kingsley",
+    "birth_date": "1943-12-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 204,
+  "fields": {
+    "name": "Ralph",
+    "surname": "Fiennes",
+    "birth_date": "1962-12-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 205,
+  "fields": {
+    "name": "Henry",
+    "surname": "Thomas",
+    "birth_date": "1971-09-09"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 206,
+  "fields": {
+    "name": "Drew",
+    "surname": "Barrymore",
+    "birth_date": "1975-02-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 207,
+  "fields": {
+    "name": "Peter",
+    "surname": "Coyote",
+    "birth_date": "1941-10-10"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 208,
+  "fields": {
+    "name": "Sam",
+    "surname": "Neill",
+    "birth_date": "1947-09-14"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 209,
+  "fields": {
+    "name": "Laura",
+    "surname": "Dern",
+    "birth_date": "1967-02-10"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 210,
+  "fields": {
+    "name": "Jeff",
+    "surname": "Goldblum",
+    "birth_date": "1952-10-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 211,
+  "fields": {
+    "name": "Arnold",
+    "surname": "Schwarzenegger",
+    "birth_date": "1947-07-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 212,
+  "fields": {
+    "name": "Linda",
+    "surname": "Hamilton",
+    "birth_date": "1956-09-26"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 213,
+  "fields": {
+    "name": "Michael",
+    "surname": "Biehn",
+    "birth_date": "1956-07-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 214,
+  "fields": {
+    "name": "Sigourney",
+    "surname": "Weaver",
+    "birth_date": "1949-10-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 215,
+  "fields": {
+    "name": "Carrie",
+    "surname": "Henn",
+    "birth_date": "1976-05-07"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 216,
+  "fields": {
+    "name": "Edward",
+    "surname": "Furlong",
+    "birth_date": "1977-08-02"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 217,
+  "fields": {
+    "name": "Kate",
+    "surname": "Winslet",
+    "birth_date": "1975-10-05"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 218,
+  "fields": {
+    "name": "Billy",
+    "surname": "Zane",
+    "birth_date": "1966-02-24"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 219,
+  "fields": {
+    "name": "Sam",
+    "surname": "Worthington",
+    "birth_date": "1976-08-02"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 220,
+  "fields": {
+    "name": "Zoe",
+    "surname": "Saldana",
+    "birth_date": "1978-06-19"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 221,
+  "fields": {
+    "name": "Morgan",
+    "surname": "Freeman",
+    "birth_date": "1937-06-01"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 222,
+  "fields": {
+    "name": "Kevin",
+    "surname": "Spacey",
+    "birth_date": "1959-07-26"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 223,
+  "fields": {
+    "name": "Edward",
+    "surname": "Norton",
+    "birth_date": "1969-08-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 224,
+  "fields": {
+    "name": "Helena",
+    "surname": "Bonham Carter",
+    "birth_date": "1966-05-26"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 225,
+  "fields": {
+    "name": "Jake",
+    "surname": "Gyllenhaal",
+    "birth_date": "1980-12-19"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 226,
+  "fields": {
+    "name": "Mark",
+    "surname": "Ruffalo",
+    "birth_date": "1967-11-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 227,
+  "fields": {
+    "name": "Robert",
+    "surname": "Downey Jr.",
+    "birth_date": "1965-04-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 228,
+  "fields": {
+    "name": "Jesse",
+    "surname": "Eisenberg",
+    "birth_date": "1983-10-05"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 229,
+  "fields": {
+    "name": "Andrew",
+    "surname": "Garfield",
+    "birth_date": "1983-08-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 230,
+  "fields": {
+    "name": "Justin",
+    "surname": "Timberlake",
+    "birth_date": "1981-01-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 231,
+  "fields": {
+    "name": "Ben",
+    "surname": "Affleck",
+    "birth_date": "1972-08-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 232,
+  "fields": {
+    "name": "Rosamund",
+    "surname": "Pike",
+    "birth_date": "1979-01-27"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 233,
+  "fields": {
+    "name": "Neil",
+    "surname": "Patrick Harris",
+    "birth_date": "1973-06-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 234,
+  "fields": {
+    "name": "Elijah",
+    "surname": "Wood",
+    "birth_date": "1981-01-28"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 235,
+  "fields": {
+    "name": "Ian",
+    "surname": "McKellen",
+    "birth_date": "1939-05-25"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 236,
+  "fields": {
+    "name": "Orlando",
+    "surname": "Bloom",
+    "birth_date": "1977-01-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 237,
+  "fields": {
+    "name": "Viggo",
+    "surname": "Mortensen",
+    "birth_date": "1958-10-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 238,
+  "fields": {
+    "name": "Jack",
+    "surname": "Black",
+    "birth_date": "1969-08-28"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 239,
+  "fields": {
+    "name": "Adrien",
+    "surname": "Brody",
+    "birth_date": "1973-04-14"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 240,
+  "fields": {
+    "name": "Martin",
+    "surname": "Freeman",
+    "birth_date": "1971-09-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 241,
+  "fields": {
+    "name": "Richard",
+    "surname": "Armitage",
+    "birth_date": "1971-08-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 242,
+  "fields": {
+    "name": "Anthony",
+    "surname": "Perkins",
+    "birth_date": "1932-04-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 243,
+  "fields": {
+    "name": "Vera",
+    "surname": "Miles",
+    "birth_date": "1929-08-23"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 244,
+  "fields": {
+    "name": "John",
+    "surname": "Gavin",
+    "birth_date": "1931-04-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 245,
+  "fields": {
+    "name": "James",
+    "surname": "Stewart",
+    "birth_date": "1908-05-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 246,
+  "fields": {
+    "name": "Grace",
+    "surname": "Kelly",
+    "birth_date": "1929-11-12"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 247,
+  "fields": {
+    "name": "Wendell",
+    "surname": "Corey",
+    "birth_date": "1914-03-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 248,
+  "fields": {
+    "name": "Kim",
+    "surname": "Novak",
+    "birth_date": "1933-02-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 249,
+  "fields": {
+    "name": "Barbara",
+    "surname": "Bel Geddes",
+    "birth_date": "1922-10-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 250,
+  "fields": {
+    "name": "Cary",
+    "surname": "Grant",
+    "birth_date": "1904-01-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 251,
+  "fields": {
+    "name": "Eva Marie",
+    "surname": "Saint",
+    "birth_date": "1924-07-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 252,
+  "fields": {
+    "name": "James",
+    "surname": "Mason",
+    "birth_date": "1909-05-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 253,
+  "fields": {
+    "name": "Tippi",
+    "surname": "Hedren",
+    "birth_date": "1930-01-19"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 254,
+  "fields": {
+    "name": "Rod",
+    "surname": "Taylor",
+    "birth_date": "1930-01-11"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 255,
+  "fields": {
+    "name": "Jessica",
+    "surname": "Tandy",
+    "birth_date": "1909-06-07"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 256,
+  "fields": {
+    "name": "Keir",
+    "surname": "Dullea",
+    "birth_date": "1936-05-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 257,
+  "fields": {
+    "name": "Gary",
+    "surname": "Lockwood",
+    "birth_date": "1937-02-21"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 258,
+  "fields": {
+    "name": "William",
+    "surname": "Sylvester",
+    "birth_date": "1922-01-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 259,
+  "fields": {
+    "name": "Malcolm",
+    "surname": "McDowell",
+    "birth_date": "1943-06-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 260,
+  "fields": {
+    "name": "Patrick",
+    "surname": "Magee",
+    "birth_date": "1922-03-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 261,
+  "fields": {
+    "name": "Michael",
+    "surname": "Bates",
+    "birth_date": "1920-12-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 262,
+  "fields": {
+    "name": "Shelley",
+    "surname": "Duvall",
+    "birth_date": "1949-07-07"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 263,
+  "fields": {
+    "name": "Danny",
+    "surname": "Lloyd",
+    "birth_date": "1972-10-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 264,
+  "fields": {
+    "name": "Matthew",
+    "surname": "Modine",
+    "birth_date": "1959-03-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 265,
+  "fields": {
+    "name": "Adam",
+    "surname": "Baldwin",
+    "birth_date": "1962-02-27"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 266,
+  "fields": {
+    "name": "Vincent",
+    "surname": "D'Onofrio",
+    "birth_date": "1959-06-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 267,
+  "fields": {
+    "name": "Peter",
+    "surname": "Sellers",
+    "birth_date": "1925-09-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 268,
+  "fields": {
+    "name": "George C.",
+    "surname": "Scott",
+    "birth_date": "1927-10-18"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 269,
+  "fields": {
+    "name": "Sterling",
+    "surname": "Hayden",
+    "birth_date": "1916-03-26"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 270,
+  "fields": {
+    "name": "Marcello",
+    "surname": "Mastroianni",
+    "birth_date": "1924-09-28"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 271,
+  "fields": {
+    "name": "Anita",
+    "surname": "Ekberg",
+    "birth_date": "1931-09-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 272,
+  "fields": {
+    "name": "Anouk",
+    "surname": "Aimée",
+    "birth_date": "1932-04-27"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 273,
+  "fields": {
+    "name": "Claudia",
+    "surname": "Cardinale",
+    "birth_date": "1938-04-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 274,
+  "fields": {
+    "name": "Bruno",
+    "surname": "Zanin",
+    "birth_date": "1951-04-09"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 275,
+  "fields": {
+    "name": "Magali",
+    "surname": "Noël",
+    "birth_date": "1931-06-27"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 276,
+  "fields": {
+    "name": "Pupella",
+    "surname": "Maggio",
+    "birth_date": "1910-04-24"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 277,
+  "fields": {
+    "name": "Anthony",
+    "surname": "Quinn",
+    "birth_date": "1915-04-21"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 278,
+  "fields": {
+    "name": "Giulietta",
+    "surname": "Masina",
+    "birth_date": "1921-02-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 279,
+  "fields": {
+    "name": "Richard",
+    "surname": "Basehart",
+    "birth_date": "1914-08-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 280,
+  "fields": {
+    "name": "François",
+    "surname": "Périer",
+    "birth_date": "1919-11-10"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 281,
+  "fields": {
+    "name": "Amedeo",
+    "surname": "Nazzari",
+    "birth_date": "1907-12-10"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 282,
+  "fields": {
+    "name": "Bruce",
+    "surname": "Campbell",
+    "birth_date": "1958-06-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 283,
+  "fields": {
+    "name": "Ellen",
+    "surname": "Sandweiss",
+    "birth_date": "1958-12-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 284,
+  "fields": {
+    "name": "Richard",
+    "surname": "DeManincor",
+    "birth_date": "1950-01-01"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 285,
+  "fields": {
+    "name": "Sarah",
+    "surname": "Berry",
+    "birth_date": "1959-10-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 286,
+  "fields": {
+    "name": "Dan",
+    "surname": "Hicks",
+    "birth_date": "1951-07-19"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 287,
+  "fields": {
+    "name": "Embeth",
+    "surname": "Davidtz",
+    "birth_date": "1965-08-11"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 288,
+  "fields": {
+    "name": "Marcus",
+    "surname": "Gilbert",
+    "birth_date": "1958-07-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 289,
+  "fields": {
+    "name": "Tobey",
+    "surname": "Maguire",
+    "birth_date": "1975-06-27"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 290,
+  "fields": {
+    "name": "Willem",
+    "surname": "Dafoe",
+    "birth_date": "1955-07-22"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 291,
+  "fields": {
+    "name": "Kirsten",
+    "surname": "Dunst",
+    "birth_date": "1982-04-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 292,
+  "fields": {
+    "name": "Alfred",
+    "surname": "Molina",
+    "birth_date": "1953-05-24"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 293,
+  "fields": {
+    "name": "Jared",
+    "surname": "Leto",
+    "birth_date": "1971-12-26"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 294,
+  "fields": {
+    "name": "Lili",
+    "surname": "Taylor",
+    "birth_date": "1967-02-20"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 295,
+  "fields": {
+    "name": "Jared",
+    "surname": "Harris",
+    "birth_date": "1961-08-24"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 296,
+  "fields": {
+    "name": "Stephen",
+    "surname": "Dorff",
+    "birth_date": "1973-07-29"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 297,
+  "fields": {
+    "name": "Gretchen",
+    "surname": "Mol",
+    "birth_date": "1972-11-08"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 298,
+  "fields": {
+    "name": "Chris",
+    "surname": "Bauer",
+    "birth_date": "1966-10-28"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 299,
+  "fields": {
+    "name": "Hannah",
+    "surname": "Murray",
+    "birth_date": "1989-07-01"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 300,
+  "fields": {
+    "name": "Sosie",
+    "surname": "Bacon",
+    "birth_date": "1992-03-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 301,
+  "fields": {
+    "name": "Marianne",
+    "surname": "Rendón",
+    "birth_date": "1990-10-15"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 302,
+  "fields": {
+    "name": "Barbara",
+    "surname": "Sukowa",
+    "birth_date": "1950-02-02"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 303,
+  "fields": {
+    "name": "Ezra",
+    "surname": "Miller",
+    "birth_date": "1992-09-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 304,
+  "fields": {
+    "name": "Choi",
+    "surname": "Min-sik",
+    "birth_date": "1962-04-27"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 305,
+  "fields": {
+    "name": "Yoo",
+    "surname": "Ji-tae",
+    "birth_date": "1976-04-13"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 306,
+  "fields": {
+    "name": "Kang",
+    "surname": "Hye-jung",
+    "birth_date": "1982-01-04"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 307,
+  "fields": {
+    "name": "Lee",
+    "surname": "Young-ae",
+    "birth_date": "1971-01-31"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 308,
+  "fields": {
+    "name": "Kwon",
+    "surname": "Yea-young",
+    "birth_date": "1990-01-01"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 309,
+  "fields": {
+    "name": "Song",
+    "surname": "Kang-ho",
+    "birth_date": "1967-01-17"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 310,
+  "fields": {
+    "name": "Shin",
+    "surname": "Ha-kyun",
+    "birth_date": "1974-05-30"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 311,
+  "fields": {
+    "name": "Bae",
+    "surname": "Doona",
+    "birth_date": "1979-10-11"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 312,
+  "fields": {
+    "name": "Kim",
+    "surname": "Min-hee",
+    "birth_date": "1982-03-01"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 313,
+  "fields": {
+    "name": "Kim",
+    "surname": "Tae-ri",
+    "birth_date": "1990-04-24"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 314,
+  "fields": {
+    "name": "Ha",
+    "surname": "Jung-woo",
+    "birth_date": "1978-03-11"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 315,
+  "fields": {
+    "name": "Tang",
+    "surname": "Wei",
+    "birth_date": "1979-10-07"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 316,
+  "fields": {
+    "name": "Park",
+    "surname": "Hae-il",
+    "birth_date": "1977-01-26"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 317,
+  "fields": {
+    "name": "Lee",
+    "surname": "Jung-hyun",
+    "birth_date": "1980-02-07"
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 318,
+  "fields": {
+    "name": "Robert",
+    "surname": "Pattinson",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.actor",
+  "pk": 319,
+  "fields": {
+    "name": "Zoë",
+    "surname": "Kravitz",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 1,
+  "fields": {
+    "name": "Quentin",
+    "surname": "Tarantino",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2,
+  "fields": {
+    "name": "Martin",
+    "surname": "Scorsese",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 3,
+  "fields": {
+    "name": "David",
+    "surname": "Lynch",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 4,
+  "fields": {
+    "name": "Christopher",
+    "surname": "Nolan",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 5,
+  "fields": {
+    "name": "Steven",
+    "surname": "Spielberg",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 6,
+  "fields": {
+    "name": "James",
+    "surname": "Cameron",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 7,
+  "fields": {
+    "name": "David",
+    "surname": "Fincher",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 8,
+  "fields": {
+    "name": "Peter",
+    "surname": "Jackson",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 9,
+  "fields": {
+    "name": "Alfred",
+    "surname": "Hitchcock",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 11,
+  "fields": {
+    "name": "Stanley",
+    "surname": "Kubrick",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 12,
+  "fields": {
+    "name": "Federico",
+    "surname": "Fellini",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 13,
+  "fields": {
+    "name": "Sam",
+    "surname": "Raimi",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 14,
+  "fields": {
+    "name": "Mary",
+    "surname": "Harron",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 15,
+  "fields": {
+    "name": "Park",
+    "surname": "Chan-woook",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 16,
+  "fields": {
+    "name": "Matt",
+    "surname": "Reeves",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 17,
+  "fields": {
+    "name": "Park",
+    "surname": "Chan-wook",
+    "birth_date": null
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 29,
+  "fields": {
+    "title": "Pulp Fiction",
+    "release_date": "1994-10-14",
+    "length": 154,
+    "director": 1,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Pulp Fiction.jpg",
+    "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+    "actors": [
+      146,
+      147,
+      145
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 30,
+  "fields": {
+    "title": "Reservoir Dogs",
+    "release_date": "1992-10-23",
+    "length": 99,
+    "director": 1,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Reservoir Dogs.jpg",
+    "plot": "When a simple jewelry heist goes strangely wrong, the robbers find themselves hunted by cops and a mysterious traitor.",
+    "actors": [
+      148,
+      149,
+      150
+    ],
+    "genres": [
+      32,
+      41
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 31,
+  "fields": {
+    "title": "Kill Bill: Vol. 1",
+    "release_date": "2003-10-10",
+    "length": 111,
+    "director": 1,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Kill Bill Vol 1.jpg",
+    "plot": "An assassin is left for dead on her wedding day. She awakens and seeks revenge on those who betrayed her.",
+    "actors": [
+      147,
+      151
+    ],
+    "genres": [
+      32,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 32,
+  "fields": {
+    "title": "Inglourious Basterds",
+    "release_date": "2009-08-21",
+    "length": 153,
+    "director": 1,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Inglourious Basterds.jpg",
+    "plot": "In Nazi-occupied France, a group of American soldiers and a French-Jewish woman work together to stop a Nazi secret plan.",
+    "actors": [
+      153,
+      154
+    ],
+    "genres": [
+      42,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 33,
+  "fields": {
+    "title": "Django Unchained",
+    "release_date": "2012-12-25",
+    "length": 165,
+    "director": 1,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Django Unchained.jpg",
+    "plot": "A freed slave partners with a bounty hunter to rescue his wife from a brutal plantation owner.",
+    "actors": [
+      153,
+      162
+    ],
+    "genres": [
+      33,
+      35
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 34,
+  "fields": {
+    "title": "Goodfellas",
+    "release_date": "1990-09-21",
+    "length": 146,
+    "director": 2,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Goodfellas.jpg",
+    "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife and his mob partners.",
+    "actors": [
+      158,
+      159,
+      160
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 35,
+  "fields": {
+    "title": "Taxi Driver",
+    "release_date": "1976-02-08",
+    "length": 114,
+    "director": 2,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Taxi Driver.jpg",
+    "plot": "A mentally unstable Vietnam War veteran works as a taxi driver in New York City, leading to a violent climax.",
+    "actors": [
+      157,
+      161
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 36,
+  "fields": {
+    "title": "Raging Bull",
+    "release_date": "1980-12-19",
+    "length": 129,
+    "director": 2,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Raging Bull.jpg",
+    "plot": "The life and career of boxer Jake LaMotta is recounted, focusing on his relationships and personal struggles.",
+    "actors": [
+      157,
+      158
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 37,
+  "fields": {
+    "title": "The Departed",
+    "release_date": "2006-10-06",
+    "length": 151,
+    "director": 2,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Departed.jpg",
+    "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in Boston.",
+    "actors": [
+      162,
+      163,
+      164
+    ],
+    "genres": [
+      32,
+      41
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 38,
+  "fields": {
+    "title": "The Wolf of Wall Street",
+    "release_date": "2013-12-25",
+    "length": 180,
+    "director": 2,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Wolf of Wall Street.jpg",
+    "plot": "A financial fraudster's rise and fall on Wall Street is recounted with excess, humor, and tragedy.",
+    "actors": [
+      157,
+      165
+    ],
+    "genres": [
+      30,
+      31
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 39,
+  "fields": {
+    "title": "Blue Velvet",
+    "release_date": "1986-09-19",
+    "length": 120,
+    "director": 3,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Blue Velvet.jpg",
+    "plot": "After finding a mysterious ear, a college student uncovers a web of secrets in his small hometown.",
+    "actors": [
+      166,
+      167
+    ],
+    "genres": [
+      41,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 40,
+  "fields": {
+    "title": "Mulholland Drive",
+    "release_date": "2001-10-12",
+    "length": 147,
+    "director": 3,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Mulholland Drive.jpg",
+    "plot": "A woman loses her memory after a car accident and connects with an aspiring actress, leading to a twisted reality.",
+    "actors": [
+      168,
+      169
+    ],
+    "genres": [
+      33,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 41,
+  "fields": {
+    "title": "Twin Peaks: Fire Walk with Me",
+    "release_date": "1992-08-28",
+    "length": 135,
+    "director": 3,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Twin Peaks Fire Walk with Me.jpg",
+    "plot": "The final days of Laura Palmer in the supernatural mystery of Twin Peaks are explored.",
+    "actors": [
+      170,
+      171
+    ],
+    "genres": [
+      37,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 42,
+  "fields": {
+    "title": "Lost Highway",
+    "release_date": "1997-02-21",
+    "length": 134,
+    "director": 3,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Lost Highway.jpg",
+    "plot": "A man is implicated in his wife's murder and mysteriously transforms into another person.",
+    "actors": [
+      172,
+      173
+    ],
+    "genres": [
+      41,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 43,
+  "fields": {
+    "title": "The Elephant Man",
+    "release_date": "1980-10-10",
+    "length": 124,
+    "director": 3,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Elephant Man.jpg",
+    "plot": "A Victorian doctor helps a severely deformed man find dignity and acceptance in 19th-century London.",
+    "actors": [
+      174,
+      175
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 44,
+  "fields": {
+    "title": "The Dark Knight",
+    "release_date": "2008-07-18",
+    "length": 152,
+    "director": 4,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Dark Knight.jpg",
+    "plot": "When a menacing criminal terrorizes Gotham, Batman must confront his own limits to stop the chaos.",
+    "actors": [
+      176,
+      177,
+      178
+    ],
+    "genres": [
+      32,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 45,
+  "fields": {
+    "title": "Inception",
+    "release_date": "2010-07-16",
+    "length": 148,
+    "director": 4,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Inception.jpg",
+    "plot": "A thief who steals corporate secrets through dream-sharing technology is given a chance at redemption through an impossible task.",
+    "actors": [
+      162,
+      179,
+      180
+    ],
+    "genres": [
+      40,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 46,
+  "fields": {
+    "title": "Interstellar",
+    "release_date": "2014-11-07",
+    "length": 169,
+    "director": 4,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Interstellar.jpg",
+    "plot": "A team of astronauts travel through a wormhole in space to find a habitable planet and ensure humanity's survival.",
+    "actors": [
+      181,
+      182,
+      183
+    ],
+    "genres": [
+      40,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 47,
+  "fields": {
+    "title": "Memento",
+    "release_date": "2000-10-11",
+    "length": 113,
+    "director": 4,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Memento.jpg",
+    "plot": "A man with short-term memory loss uses tattoos and polaroids to track down the killer of his wife.",
+    "actors": [
+      185,
+      184
+    ],
+    "genres": [
+      41,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 48,
+  "fields": {
+    "title": "Dunkirk",
+    "release_date": "2017-07-21",
+    "length": 106,
+    "director": 4,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Dunkirk.jpg",
+    "plot": "Allied soldiers from Belgium, the British Empire, and France are trapped on the beaches of Dunkirk during WWII.",
+    "actors": [
+      186,
+      187,
+      188
+    ],
+    "genres": [
+      41,
+      42
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 49,
+  "fields": {
+    "title": "Jaws",
+    "release_date": "1975-06-20",
+    "length": 124,
+    "director": 5,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Jaws.jpg",
+    "plot": "A police chief, a marine scientist, and a grizzled shark hunter team up to tackle a giant shark threatening a beach town.",
+    "actors": [
+      189,
+      190,
+      191
+    ],
+    "genres": [
+      41,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 50,
+  "fields": {
+    "title": "Raiders of the Lost Ark",
+    "release_date": "1981-06-12",
+    "length": 115,
+    "director": 5,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Raiders of the Lost Ark.jpg",
+    "plot": "An adventuring archaeologist seeks the Ark of the Covenant before the Nazis do.",
+    "actors": [
+      192,
+      193,
+      194
+    ],
+    "genres": [
+      28,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 51,
+  "fields": {
+    "title": "Schindler's List",
+    "release_date": "1993-12-15",
+    "length": 195,
+    "director": 5,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Schindlers List.jpg",
+    "plot": "Oskar Schindler shelters his Jewish workers during the Holocaust, saving their lives.",
+    "actors": [
+      195,
+      196
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 52,
+  "fields": {
+    "title": "E.T. the Extra-Terrestrial",
+    "release_date": "1982-06-11",
+    "length": 115,
+    "director": 5,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/ET the ExtraTerrestrial.jpg",
+    "plot": "A boy befriends an extraterrestrial who has landed on Earth and helps him return home.",
+    "actors": [
+      197
+    ],
+    "genres": [
+      40,
+      34
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 53,
+  "fields": {
+    "title": "Jurassic Park",
+    "release_date": "1993-06-11",
+    "length": 127,
+    "director": 5,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Jurassic Park.jpg",
+    "plot": "A paleontologist, a mathematician, and a botanist are tasked with surveying a theme park of dinosaurs.",
+    "actors": [
+      192,
+      198,
+      199
+    ],
+    "genres": [
+      40,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 54,
+  "fields": {
+    "title": "The Terminator",
+    "release_date": "1984-10-26",
+    "length": 107,
+    "director": 6,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Terminator.jpg",
+    "plot": "A cyborg assassin travels back in time to kill the mother of humanity's future savior.",
+    "actors": [
+      200,
+      201
+    ],
+    "genres": [
+      40,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 55,
+  "fields": {
+    "title": "Aliens",
+    "release_date": "1986-07-18",
+    "length": 137,
+    "director": 6,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Aliens.jpg",
+    "plot": "A Marine unit is sent to investigate the silence of a colony on a xenomorph-infested planet.",
+    "actors": [
+      200,
+      202
+    ],
+    "genres": [
+      40,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 56,
+  "fields": {
+    "title": "Terminator 2: Judgment Day",
+    "release_date": "1991-07-03",
+    "length": 137,
+    "director": 6,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Terminator 2 Judgment Day.jpg",
+    "plot": "A liquid metal cyborg is sent back in time to kill the young leader of humanity's future, but an older terminator protects him.",
+    "actors": [
+      200,
+      203
+    ],
+    "genres": [
+      40,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 57,
+  "fields": {
+    "title": "Titanic",
+    "release_date": "1997-12-19",
+    "length": 195,
+    "director": 6,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Titanic.jpg",
+    "plot": "A poor artist falls in love with a rich woman on the maiden voyage of the Titanic.",
+    "actors": [
+      157,
+      204
+    ],
+    "genres": [
+      33,
+      39
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 58,
+  "fields": {
+    "title": "Avatar",
+    "release_date": "2009-12-18",
+    "length": 162,
+    "director": 6,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Avatar.jpg",
+    "plot": "A paraplegic Marine infiltrates a humanoid alien society, falling in love with one of them.",
+    "actors": [
+      205,
+      206
+    ],
+    "genres": [
+      40,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 59,
+  "fields": {
+    "title": "Seven",
+    "release_date": "1995-09-22",
+    "length": 127,
+    "director": 7,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Seven.jpg",
+    "plot": "Two detectives hunt a serial killer who murders people according to the seven deadly sins.",
+    "actors": [
+      153,
+      207
+    ],
+    "genres": [
+      32,
+      41
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 60,
+  "fields": {
+    "title": "Fight Club",
+    "release_date": "1999-10-15",
+    "length": 139,
+    "director": 7,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Fight Club.jpg",
+    "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club.",
+    "actors": [
+      153,
+      208
+    ],
+    "genres": [
+      33,
+      41
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 61,
+  "fields": {
+    "title": "Zodiac",
+    "release_date": "2007-03-02",
+    "length": 157,
+    "director": 7,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Zodiac.jpg",
+    "plot": "Detectives hunt a serial killer dubbed 'The Zodiac' in 1970s San Francisco.",
+    "actors": [
+      162,
+      209
+    ],
+    "genres": [
+      32,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 62,
+  "fields": {
+    "title": "The Social Network",
+    "release_date": "2010-10-01",
+    "length": 120,
+    "director": 7,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Social Network.jpg",
+    "plot": "A computer programmer creates the social networking site that becomes known as Facebook.",
+    "actors": [
+      210,
+      211,
+      212
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 63,
+  "fields": {
+    "title": "Gone Girl",
+    "release_date": "2014-10-03",
+    "length": 149,
+    "director": 7,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Gone Girl.jpg",
+    "plot": "A wife disappears on her wedding anniversary, and her husband becomes the prime suspect.",
+    "actors": [
+      213,
+      214
+    ],
+    "genres": [
+      33,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 64,
+  "fields": {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "release_date": "2001-12-19",
+    "length": 178,
+    "director": 8,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Lord of the Rings The Fellowship of the Ring.jpg",
+    "plot": "A hobbit must destroy a ring to prevent it from falling into the hands of an evil lord.",
+    "actors": [
+      215,
+      216,
+      217
+    ],
+    "genres": [
+      35,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 65,
+  "fields": {
+    "title": "The Lord of the Rings: The Two Towers",
+    "release_date": "2002-12-18",
+    "length": 179,
+    "director": 8,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Lord of the Rings The Two Towers.jpg",
+    "plot": "The hobbits continue their journey to destroy the ring as the war against Mordor escalates.",
+    "actors": [
+      215,
+      216,
+      217
+    ],
+    "genres": [
+      35,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 66,
+  "fields": {
+    "title": "The Lord of the Rings: The Return of the King",
+    "release_date": "2003-12-17",
+    "length": 201,
+    "director": 8,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Lord of the Rings The Return of the King.jpg",
+    "plot": "The hobbits face their final journey to Mount Doom to destroy the ring and save Middle-earth.",
+    "actors": [
+      215,
+      216,
+      217
+    ],
+    "genres": [
+      35,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 67,
+  "fields": {
+    "title": "King Kong",
+    "release_date": "2005-12-14",
+    "length": 187,
+    "director": 8,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/King Kong.jpg",
+    "plot": "An expedition to a mysterious island discovers a giant ape and brings chaos to New York City.",
+    "actors": [
+      218,
+      219
+    ],
+    "genres": [
+      33,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 68,
+  "fields": {
+    "title": "The Hobbit: An Unexpected Journey",
+    "release_date": "2012-12-14",
+    "length": 169,
+    "director": 8,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Hobbit An Unexpected Journey.jpg",
+    "plot": "A hobbit embarks on a quest with a group of dwarves to reclaim their treasure from a dragon.",
+    "actors": [
+      216,
+      220
+    ],
+    "genres": [
+      35,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 69,
+  "fields": {
+    "title": "Psycho",
+    "release_date": "1960-09-08",
+    "length": 109,
+    "director": 9,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Psycho.jpg",
+    "plot": "A woman on the run checks into a mysterious motel run by a disturbed man and his mother.",
+    "actors": [
+      221,
+      222
+    ],
+    "genres": [
+      41,
+      37
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 70,
+  "fields": {
+    "title": "Rear Window",
+    "release_date": "1954-09-01",
+    "length": 112,
+    "director": 9,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Rear Window.jpg",
+    "plot": "A photographer confined to a wheelchair observes his neighbors and becomes convinced of a murder.",
+    "actors": [
+      223,
+      224
+    ],
+    "genres": [
+      41,
+      38
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 71,
+  "fields": {
+    "title": "Vertigo",
+    "release_date": "1958-05-09",
+    "length": 128,
+    "director": 9,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Vertigo.jpg",
+    "plot": "A detective with a fear of heights becomes obsessed with a woman he is hired to follow.",
+    "actors": [
+      223,
+      225
+    ],
+    "genres": [
+      38,
+      39
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 72,
+  "fields": {
+    "title": "North by Northwest",
+    "release_date": "1959-07-01",
+    "length": 136,
+    "director": 9,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/North by Northwest.jpg",
+    "plot": "An ordinary man is mistaken for a spy and becomes entangled in a dangerous international plot.",
+    "actors": [
+      226,
+      227
+    ],
+    "genres": [
+      41,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 73,
+  "fields": {
+    "title": "The Birds",
+    "release_date": "1963-03-28",
+    "length": 119,
+    "director": 9,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Birds.jpg",
+    "plot": "A woman returns to her hometown and mysteriously, birds begin attacking people in increasing numbers.",
+    "actors": [
+      227,
+      228
+    ],
+    "genres": [
+      41,
+      37
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 74,
+  "fields": {
+    "title": "2001: A Space Odyssey",
+    "release_date": "1968-04-03",
+    "length": 149,
+    "director": 11,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/2001 A Space Odyssey.jpg",
+    "plot": "An exploration of space travel and artificial intelligence through an epic interstellar journey.",
+    "actors": [],
+    "genres": [
+      40,
+      29
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 75,
+  "fields": {
+    "title": "A Clockwork Orange",
+    "release_date": "1971-12-19",
+    "length": 136,
+    "director": 11,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/A Clockwork Orange.jpg",
+    "plot": "A violent young man undergoes an experimental procedure to correct his behavior.",
+    "actors": [
+      230,
+      229
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 76,
+  "fields": {
+    "title": "The Shining",
+    "release_date": "1980-05-23",
+    "length": 146,
+    "director": 11,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Shining.jpg",
+    "plot": "A family isolated in a hotel during winter descends into madness as supernatural forces take hold.",
+    "actors": [
+      231,
+      232
+    ],
+    "genres": [
+      33,
+      37
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 77,
+  "fields": {
+    "title": "Full Metal Jacket",
+    "release_date": "1987-06-26",
+    "length": 116,
+    "director": 11,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Full Metal Jacket.jpg",
+    "plot": "A Marine unit faces the realities of the Vietnam War after intense bootcamp training.",
+    "actors": [
+      233,
+      234,
+      235
+    ],
+    "genres": [
+      33,
+      42
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 78,
+  "fields": {
+    "title": "Dr. Strangelove",
+    "release_date": "1964-01-29",
+    "length": 95,
+    "director": 11,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Dr Strangelove.jpg",
+    "plot": "When a deranged general orders a nuclear attack, officials must prevent nuclear war.",
+    "actors": [
+      236,
+      237,
+      238
+    ],
+    "genres": [
+      42,
+      31
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 79,
+  "fields": {
+    "title": "La Dolce Vita",
+    "release_date": "1960-02-05",
+    "length": 174,
+    "director": 12,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/La Dolce Vita.jpg",
+    "plot": "An unflinching look at the lives and morals of Rome's high society and celebrities.",
+    "actors": [
+      239,
+      240,
+      241
+    ],
+    "genres": [
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 80,
+  "fields": {
+    "title": "8½",
+    "release_date": "1963-06-25",
+    "length": 138,
+    "director": 12,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/8½.jpg",
+    "plot": "A film director struggles with creative block and his personal life during the making of his new film.",
+    "actors": [
+      239,
+      242
+    ],
+    "genres": [
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 81,
+  "fields": {
+    "title": "Amarcord",
+    "release_date": "1973-12-13",
+    "length": 123,
+    "director": 12,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Amarcord.jpg",
+    "plot": "A nostalgic portrayal of Italian life in the 1930s through the memories of a young man.",
+    "actors": [
+      243,
+      244
+    ],
+    "genres": [
+      33,
+      31
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 82,
+  "fields": {
+    "title": "La Strada",
+    "release_date": "1954-09-23",
+    "length": 108,
+    "director": 12,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/La Strada.jpg",
+    "plot": "A circus performer and a vagrant form a complex relationship traveling through Italian villages.",
+    "actors": [
+      246,
+      245
+    ],
+    "genres": [
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 83,
+  "fields": {
+    "title": "Nights of Cabiria",
+    "release_date": "1957-02-16",
+    "length": 110,
+    "director": 12,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Nights of Cabiria.jpg",
+    "plot": "A prostitute experiences the ups and downs of urban life and love in Rome.",
+    "actors": [
+      247,
+      245
+    ],
+    "genres": [
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 84,
+  "fields": {
+    "title": "The Evil Dead",
+    "release_date": "1981-10-15",
+    "length": 85,
+    "director": 13,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Evil Dead.jpg",
+    "plot": "Five college students fight for survival against evil spirits in a remote cabin.",
+    "actors": [
+      248,
+      249
+    ],
+    "genres": [
+      37
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 85,
+  "fields": {
+    "title": "Evil Dead II",
+    "release_date": "1987-03-13",
+    "length": 84,
+    "director": 13,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Evil Dead II.jpg",
+    "plot": "A man battles evil forces and his possessed girlfriend in a cabin in the woods.",
+    "actors": [
+      248,
+      250
+    ],
+    "genres": [
+      37,
+      31
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 86,
+  "fields": {
+    "title": "Army of Darkness",
+    "release_date": "1992-10-09",
+    "length": 96,
+    "director": 13,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Army of Darkness.jpg",
+    "plot": "A man travels back to medieval times to battle an army of undead creatures.",
+    "actors": [
+      248,
+      251
+    ],
+    "genres": [
+      35,
+      31
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 87,
+  "fields": {
+    "title": "Spider-Man",
+    "release_date": "2002-05-03",
+    "length": 121,
+    "director": 13,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/SpiderMan.jpg",
+    "plot": "A young man gains spider powers and becomes a superhero fighting a villain with similar origins.",
+    "actors": [
+      252,
+      253,
+      254
+    ],
+    "genres": [
+      35,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 88,
+  "fields": {
+    "title": "Spider-Man 2",
+    "release_date": "2004-06-30",
+    "length": 127,
+    "director": 13,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/SpiderMan 2.jpg",
+    "plot": "Spider-Man faces a new villain while struggling with his personal life and love for Mary Jane.",
+    "actors": [
+      252,
+      254,
+      255
+    ],
+    "genres": [
+      35,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 89,
+  "fields": {
+    "title": "American Psycho",
+    "release_date": "2000-04-14",
+    "length": 102,
+    "director": 14,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/American Psycho.jpg",
+    "plot": "A wealthy investment banker leads a double life as a serial killer in 1980s New York.",
+    "actors": [
+      256,
+      257
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 90,
+  "fields": {
+    "title": "I Shot Andy Warhol",
+    "release_date": "1996-05-01",
+    "length": 103,
+    "director": 14,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/I Shot Andy Warhol.jpg",
+    "plot": "The life of Valerie Solanas, who became infamous for shooting Andy Warhol.",
+    "actors": [
+      258,
+      259
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 91,
+  "fields": {
+    "title": "The Notorious Bettie Page",
+    "release_date": "2005-09-11",
+    "length": 91,
+    "director": 14,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Notorious Bettie Page.jpg",
+    "plot": "The life of the famous 1950s pin-up model Bettie Page is explored.",
+    "actors": [
+      260,
+      261
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 92,
+  "fields": {
+    "title": "Charlie Says",
+    "release_date": "2018-09-02",
+    "length": 110,
+    "director": 14,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Charlie Says.jpg",
+    "plot": "The lives of three women in Charles Manson's cult are explored.",
+    "actors": [
+      262,
+      263
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 93,
+  "fields": {
+    "title": "Dali Land",
+    "release_date": "2022-09-15",
+    "length": 104,
+    "director": 14,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Dalíland.jpg",
+    "plot": "The life and art of surrealist Salvador Dalí are explored.",
+    "actors": [
+      264
+    ],
+    "genres": [
+      33,
+      30
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 94,
+  "fields": {
+    "title": "Oldboy",
+    "release_date": "2003-11-21",
+    "length": 120,
+    "director": 15,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Oldboy.jpg",
+    "plot": "A man is imprisoned for 15 years and released to find his captor's identity.",
+    "actors": [
+      265,
+      266
+    ],
+    "genres": [
+      41,
+      28
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 95,
+  "fields": {
+    "title": "Lady Vengeance",
+    "release_date": "2005-07-29",
+    "length": 112,
+    "director": 15,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Lady Vengeance.jpg",
+    "plot": "A woman exacts revenge on the man who killed her daughter after serving time in prison.",
+    "actors": [
+      267,
+      268
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 96,
+  "fields": {
+    "title": "Sympathy for Mr. Vengeance",
+    "release_date": "2002-03-29",
+    "length": 129,
+    "director": 15,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Sympathy for Mr Vengeance.jpg",
+    "plot": "A deaf man seeks revenge on those responsible for his sister's death.",
+    "actors": [
+      269,
+      270
+    ],
+    "genres": [
+      32,
+      33
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 97,
+  "fields": {
+    "title": "The Handmaiden",
+    "release_date": "2016-06-01",
+    "length": 144,
+    "director": 15,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/The Handmaiden.jpg",
+    "plot": "Two con artists plot to swindle a wealthy heiress through an elaborate scheme.",
+    "actors": [
+      271,
+      272
+    ],
+    "genres": [
+      33,
+      39
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 98,
+  "fields": {
+    "title": "Decision to Leave",
+    "release_date": "2022-06-29",
+    "length": 138,
+    "director": 15,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "movies/posters/Decision to Leave.jpg",
+    "plot": "A detective investigating a murder suspects the victim's wife but becomes entranced by her.",
+    "actors": [
+      273,
+      274
+    ],
+    "genres": [
+      38,
+      39
+    ],
+    "watched_by": []
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 99,
+  "fields": {
+    "title": "The Batman",
+    "release_date": "2022-03-04",
+    "length": 176,
+    "director": 16,
+    "logged_by": [
+      "admin"
+    ],
+    "poster": "",
+    "plot": "The Batman movie",
+    "actors": [
+      318,
+      319
+    ],
+    "genres": [
+      35,
+      28
+    ],
+    "watched_by": []
+  }
+}
+]

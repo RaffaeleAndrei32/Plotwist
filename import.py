@@ -193,7 +193,7 @@ def import_movies():
     with open(file_path, 'r', encoding='utf-8') as f:
         movies_data = json.load(f)
 
-    # Get first admin user for logged_by
+    # Get first user for logged_by
     admin_user = CustomUser.objects.filter(is_staff=True).first()
     if not admin_user:
         print("✗ Error: No admin user found in DB.")

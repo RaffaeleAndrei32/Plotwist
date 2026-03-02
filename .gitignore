@@ -149,6 +149,7 @@ activemq-data/
 
 # Environments
 .env
+.env.docker
 .envrc
 .venv
 env/
@@ -230,3 +231,5 @@ documentation/*.toc
 !documentation/plotwist_documentation.pdf
 !documentation/images/
 !documentation/titlepage.tex
+
+db.sqlite3

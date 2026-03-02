@@ -137,12 +137,15 @@ class MovieDetailViewTestCase(TestCase):
     def setUp(self):
         """Set up test data."""
         self.client = Client()
+
         self.director = Director.objects.create(
             name="Steven",
             surname="Spielberg",
             birth_date="1946-12-18"
         )
+
         self.genre = Genre.objects.create(name="Sci-Fi")
+
         self.actor = Actor.objects.create(
             name="Tom",
             surname="Hanks",
@@ -163,7 +166,9 @@ class MovieDetailViewTestCase(TestCase):
             logged_by=self.user,
             plot="A skilled thief who steals corporate secrets..."
         )
+
         self.movie.genres.add(self.genre)
+
         self.movie.actors.add(self.actor)
         
         # Add a review
@@ -172,6 +177,7 @@ class MovieDetailViewTestCase(TestCase):
             email="reviewer@example.com",
             password="password123"
         )
+        
         self.review = Review.objects.create(
             title="Amazing Movie",
             text="One of the best movies ever made!",
