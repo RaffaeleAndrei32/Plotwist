@@ -99,11 +99,15 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
 **Install dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
 **Run migrations and start the server**
+```bash
 python manage.py migrate
 python manage.py runserver
+```
 
 ---
 ## License
