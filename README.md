@@ -56,17 +56,17 @@ docker compose exec web python manage.py migrate
 ```
 
 ---
-### Installation Steps
+# Populate the database
 This project provides two distinct ways to populate the database, depending on your goal.
 
-**Option 1: Load Sample Data (Fixtures):**
+### Option 1: Load Sample Data (Fixtures):
 Populate the empty PostgreSQL database with initial movies, genres, actors, and configured users.
 ```bash
 docker compose exec web python manage.py loaddata apps/movies/fixtures/movies_backup.json
 ```
 The application will now be running at http://localhost:8000.
 
-**Option 2: Full Data Ingestion (ETL via TMDB API)**
+### Option 2: Full Data Ingestion (ETL via TMDB API)
 The application includes a Django Management Command designed to fetch, parse, and ingest raw JSON data, while automatically downloading movie posters from the TMDB API.
 
 Prerequisite: You must add your TMDB API key to the .env.docker file:
@@ -81,7 +81,7 @@ docker compose exec web python manage.py import_all
 
 Note: This command is idempotent. It uses update_or_create logic to safely update existing records without creating duplicates, and gracefully handles missing API responses or missing posters.
 
-**Demo Credentials:**
+## Demo Credentials:
 If you loaded the sample data using the commands above, you can log in to the admin panel (http://localhost:8000/admin) using the following pre-configured account:
 
 Moderator (Limited Admin Access):
