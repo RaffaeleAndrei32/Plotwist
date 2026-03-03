@@ -34,8 +34,8 @@ The application is fully containerized. The easiest and recommended way to run t
 
 **Clone the repository:**
 ```bash
-    git clone https://github.com/RaffaeleAndrei32/Plotwist.git
-    cd Plotwist
+git clone https://github.com/RaffaeleAndrei32/Plotwist.git
+cd Plotwist
 ```
 
 **Environment Variables:**
@@ -44,24 +44,25 @@ Create a .env and .env.docker file in the root directory to store your configura
 **Build and start the cointainer:**
 ```bash
 
-    docker compose up --build -d
+docker compose up --build -d
 
 ```
 
 **Apply database migrations:**
 ```bash
 
-    docker compose exec web python manage.py migrate
+docker compose exec web python manage.py migrate
 
 ```
 
 ---
 ### Installation Steps
 This project provides two distinct ways to populate the database, depending on your goal.
+
 **Option 1: Load Sample Data (Fixtures):**
 Populate the empty PostgreSQL database with initial movies, genres, actors, and configured users.
 ```bash
-    docker compose exec web python manage.py loaddata apps/movies/fixtures/movies_backup.json
+docker compose exec web python manage.py loaddata apps/movies/fixtures/movies_backup.json
 ```
 The application will now be running at http://localhost:8000.
 
